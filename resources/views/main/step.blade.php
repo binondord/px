@@ -16,7 +16,7 @@
                                     <strong>Yes</strong>
                                 </label>
                                 <label>
-                                    <input type="radio" name="age" value="yes">
+                                    <input type="radio" name="age" value="no">
                                     <strong>No</strong>
                                 </label>
                             </div>
@@ -28,7 +28,7 @@
                                     <strong>Yes</strong>
                                 </label>
                                 <label>
-                                    <input type="radio" name="completed" value="yes">
+                                    <input type="radio" name="completed" value="no">
                                     <strong>No</strong>
                                 </label>
                             </div>
@@ -40,7 +40,7 @@
                                     <strong>Yes</strong>
                                 </label>
                                 <label>
-                                    <input type="radio" name="holder" value="yes">
+                                    <input type="radio" name="holder" value="no">
                                     <strong>No</strong>
                                 </label>
                             </div>
@@ -58,11 +58,11 @@
                             <div class="field">
                                 <h5>Have you taken 473 Battery Exam?</h5>
                                 <label>
-                                    <input type="radio" name="age" value="yes" checked>
+                                    <input type="radio" name="battery473_done" value="yes" checked>
                                     <strong>Yes</strong>
                                 </label>
                                 <label>
-                                    <input type="radio" name="age" value="yes">
+                                    <input type="radio" name="battery473_done" value="no">
                                     <strong>No</strong>
                                 </label>
                             </div>
@@ -70,11 +70,11 @@
                             <div class="field">
                                 <h5>Have you taken 473-C Exam?</h5>
                                 <label>
-                                    <input type="radio" name="completed" value="yes" checked>
+                                    <input type="radio" name="c473_done" value="yes" checked>
                                     <strong>Yes</strong>
                                 </label>
                                 <label>
-                                    <input type="radio" name="completed" value="yes">
+                                    <input type="radio" name="c473_done" value="no">
                                     <strong>No</strong>
                                 </label>
                             </div>
@@ -82,11 +82,11 @@
                             <div class="field">
                                 <h5>Have you taken 460 Battery Exam?</h5>
                                 <label>
-                                    <input type="radio" name="holder" value="yes" checked>
+                                    <input type="radio" name="battery460_done" value="yes" checked>
                                     <strong>Yes</strong>
                                 </label>
                                 <label>
-                                    <input type="radio" name="holder" value="yes">
+                                    <input type="radio" name="battery460_done" value="no">
                                     <strong>No</strong>
                                 </label>
                             </div>
