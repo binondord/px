@@ -1,0 +1,337 @@
+
+body {
+    margin: 0;
+    color: #3d5463;
+    font-size: 16px;
+    font-weight: 300;
+    background: #f0f5f6;
+    font-family: Helvetica,Arial,sans-serif;
+}
+body a {
+    color: #1b4865;
+    text-decoration: none;
+}
+body p {
+    margin: 0 0 15px;
+    line-height: 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #3d5463;
+    margin: 0 0 20px;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 35px;
+}
+h2 {
+    font-size: 28px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 16px;
+}
+.red {
+    color: red;
+}
+
+.inner {
+    width: 1025px;
+    margin: 0 auto;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+.clear::after {
+    height: 0;
+    content: '.';
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+
+.button {
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+    background: #ed5b5b;
+    background: linear-gradient(to bottom, #ed5b5b 0%,#c93737 100%);
+    background: -moz-linear-gradient(top, #ed5b5b 0%, #c93737 100%);
+    background: -webkit-linear-gradient(top, #ed5b5b 0%,#c93737 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed5b5b', endColorstr='#c93737',GradientType=0 );
+}
+
+
+/* Header */
+#header {
+    padding: 15px 0;
+    background: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+#header .logo {
+    padding: 5px 0;
+}
+#header .menu li {
+    float: left;
+    font-size: 14px;
+    list-style: none;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+
+
+#content {
+    padding: 0;
+    border: 1px solid #eaeaea;
+}
+#content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* Row 1 */
+#home .row-1 {
+    padding: 60px 0;
+}
+#home .row-1 h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+#home .row-1 .map {
+    margin: 0;
+    height: 480px;
+    cursor: pointer;
+    background: url(../images/map.png) center center no-repeat;
+}
+
+/* Row 2 */
+#home .row-2 {
+    padding: 60px 0;
+    background: #fff;
+}
+#home .row-2 h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+#home .row-2 .col {
+    width: 400px;
+}
+#home .row-2 .col h4 {
+    font-weight: 500;
+}
+#home .row-2 .left {
+    margin-right: 20px;
+    padding: 20px 0 20px 100px;
+    background: url(../images/paper-exam.png) 0 0 no-repeat;
+}
+#home .row-2 .right {
+    padding: 20px 0 20px 100px;
+    background: url(../images/check-o.png) 0 0 no-repeat;
+}
+
+/* Row 3 */
+#home .row-3 {
+    padding: 60px 0;
+}
+#home .row-3 h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+#home .row-3 .lists li {
+    float: left;
+    width: 480px;
+    font-size: 16px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    background: url(../images/blue-check.png) 0 0 no-repeat;
+}
+
+
+
+
+/* Row 1 */
+#step .row-1 {
+    padding: 60px 0;
+}
+#step .row-1 h3 {
+    color: #fff;
+    border-radius: 4px;
+    padding: 15px 10px;
+    text-align: center;
+    background: #0d60be;
+}
+#step .row-1 form {
+    padding: 0 40px;
+}
+#step .row-1 form label {
+    color: #383b3c;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 20px;
+}
+#step .row-1 form input {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #c3c3c3;
+}
+#step .row-1 form fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+#step .row-1 form fieldset:first-child {
+    display: block;
+}
+#step .row-1 form .fields {
+    padding: 40px;
+    background: #fff;
+    border: 1px solid #e9f0f2;
+}
+#step .row-1 form .fields p {
+    margin-bottom: 30px;
+}
+#step .row-1 form .fields h5 {
+    color: #383b3c;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#step .row-1 form .fields .field {
+    margin-bottom: 20px;
+}
+#step .row-1 form .fields .button {
+    display: block;
+    font-size: 30px;
+    margin-top: 60px;
+    padding: 20px 50px;
+}
+#step .row-1 form .fields .button .icon {
+    display: inline-block;
+    padding: 10px 70px 10px 0;
+    background: url(../images/arrow-o.png) right center no-repeat;
+}
+
+
+/* Step 3 */
+#step .row-1 form .step-3 .field {
+    width: 400px;
+    margin: 40px auto;
+}
+#step .row-1 form .step-3 .field input {
+    width: 92%;
+    padding: 15px;
+    font-size: 16px;
+}
+#step .row-1 form .step-3 .field label {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#step .row-1 form .step-3 .button {
+    margin-top: 40px;
+}
+
+
+/* Step 4 */
+#step .row-1 form .step-4 .field {
+    width: 700px;
+}
+#step .row-1 form .step-4 .field input {
+    width: 400px;
+}
+#step .row-1 form .step-4 .field select {
+    width: 421px;
+    height: 39px;
+    font-size: 16px;
+    background: #fff;
+    border: 1px solid #c3c3c3;
+}
+#step .row-1 form .step-4 .field label {
+    width: 250px;
+    display: inline-block;
+}
+#step .row-1 form .step-4 .field.zip input {
+    width: 100px;
+}
+#step .row-1 form .step-4 .field.birhtyear select {
+    width: 123px;
+}
+
+
+/* Row 2 */
+#step .row-2 {
+    padding: 60px 0;
+    background: #fff;
+}
+#step .row-2 h2 {
+    margin-bottom: 40px;
+}
+#step .row-2 ul {
+    margin-top: 30px;
+}
+#step .row-2 ul.lists li {
+    float: left;
+    width: 480px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    background: url(../images/blue-check.png) 0 0 no-repeat;
+}
+
+#step .row-2 .left {
+    width: 500px;
+}
+#step .row-2 .right {
+    width: 500px;
+}
+
+#step .row-2 .right .lists li {
+    width: 200px;
+}
+
+
+
+/* Row 3 */
+#step .row-3 {
+    padding: 60px 0;
+}
+#step .row-3 h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+#step .row-3 ul.lists {
+    margin-bottom: 40px;
+}
+#step .row-3 ul.lists li {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* Footer */
+#footer {
+    padding: 20px;
+    font-size: 12px;
+    background: #fff;
+}
+#footer .right a {
+    margin-left: 20px;
+}
