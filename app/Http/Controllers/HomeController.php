@@ -24,7 +24,7 @@ class HomeController extends Controller
     {
         $all = $request->all();
 
-        dd($all);
+        //dd($all);
 
         $status = 'Acknowledged receipt. Please expect an email from us. Thank you.';
 
