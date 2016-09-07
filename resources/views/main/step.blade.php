@@ -10,7 +10,7 @@
                         <div class="fields">
                             <p>A basic eligibility is expected from all applicants by the United States Postal Service. Please fill the required information truthfully:</p>
                             <div class="field">
-                                <h5>Arere you 18 years of age or older?</h5>
+                                <h5>Are you 18 years of age or older?</h5>
                                 <label>
                                     <input type="radio" name="age" value="yes" checked>
                                     <strong>Yes</strong>
