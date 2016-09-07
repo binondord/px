@@ -340,3 +340,8 @@ h5 {
     width: 800px; height: 480px;
     margin:0 auto;
 }
+
+.alert{
+    font-style: italic;
+    color: green;
+}

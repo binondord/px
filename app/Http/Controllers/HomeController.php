@@ -24,6 +24,8 @@ class HomeController extends Controller
     {
         $all = $request->all();
 
-        return redirect()->back()->with('data', $all);
+        $status = 'Acknowledged receipt. Please expect an email from us. Thank you.';
+
+        return redirect('/')->with('status', $status);
     }
 }

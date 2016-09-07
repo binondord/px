@@ -4,7 +4,15 @@
     <main id="content">
         <section class="row-1">
             <div class="inner clear">
-                <h2>To Get Started Please Click Your State on the Map Below</h2>
+                <h2>To Get Started Please Click Your State on the Map Below
+                    @if (session('status'))
+                    <small>
+                            <div class="alert alert-success">
+                                {{ session('status') }}
+                            </div>
+                        </small>
+                    @endif
+                </h2>
                 {{--<figure class="map"></figure>--}}
                 <div id="map"></div>
             </div>

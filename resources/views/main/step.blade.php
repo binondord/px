@@ -172,7 +172,7 @@
 
                             <div class="field birhtyear">
                                 <label>Birth Year:</label>
-                                <select name="birhtyear" id="birhtyear">
+                                <select name="birthyear" id="birthyear">
                                     <option>1980</option>
                                     <option>1981</option>
                                     <option>1982</option>

@@ -52,7 +52,7 @@ $(document).ready(function() {
             'KS': {fill: '#e26928'}, //Kansas
             'LA': {fill: '#dd353a'}, //Louisiana
             'VA': {fill: '#f8b334',label: 'Virginia'}, //Virginia
-            'DC': {fill: '#000000'} //Dist. of Columbia
+            'DC': {fill: '#79b031'} //Dist. of Columbia
         },
         'stateSpecificHoverStyles': {
             'HI' : {fill: '#ff0'}
