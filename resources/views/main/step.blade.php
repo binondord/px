@@ -226,6 +226,5 @@
             </div>
         </section>
 
-        @include('layouts.partials.footer')
     </main>
 @endsection

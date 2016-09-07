@@ -1,6 +1,6 @@
 <header id="header">
     <div class="inner clear">
-        <a href="" class="logo left">
+        <a href="/" class="logo left">
             <img alt="Logo" src="{{ asset('images/logo_peus3.png') }}">
         </a>
         <ul class="menu right">

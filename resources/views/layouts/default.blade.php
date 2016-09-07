@@ -12,6 +12,7 @@
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('css/styles.css') }}">
 
+
     @yield('scripts')
 
 </head>
@@ -19,6 +20,13 @@
     @include('layouts.partials.header')
 
     @yield('content')
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
+
+    @section('footer')
+        @include('layouts.partials.footer')
+    @show
+
 
 </body>
 </html>

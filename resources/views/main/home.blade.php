@@ -5,7 +5,8 @@
         <section class="row-1">
             <div class="inner clear">
                 <h2>To Get Started Please Click Your State on the Map Below</h2>
-                <figure class="map"></figure>
+                {{--<figure class="map"></figure>--}}
+                <div id="map"></div>
             </div>
         </section>
         <section class="row-2">
@@ -37,6 +38,15 @@
             </div>
         </section>
 
-        @include('layouts.partials.footer')
     </main>
+@endsection
+
+@section('footer')
+    @parent
+
+    <div id="alert"></div>
+    <script src="{{ asset('/js/lib/raphael.js') }}"></script>
+    <script src="{{ asset('/js/lib/color.jquery.js') }}"></script>
+    <script src="{{ asset('/js/lib/jquery.usmap.js') }}"></script>
+    <script src="{{ asset('/js/web.js') }}"></script>
 @endsection
