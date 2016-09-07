@@ -10,6 +10,13 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('main.home');
+        $style = 'home';
+        return view('main.home',compact('style'));
+    }
+
+    public function step()
+    {
+        $style = 'step';
+        return view('main.step',compact('style'));
     }
 }

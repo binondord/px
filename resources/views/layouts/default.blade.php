@@ -12,8 +12,10 @@
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('css/styles.css') }}">
 
+    @yield('scripts')
+
 </head>
-<body id="home">
+<body id="{{ $style }}">
     @include('layouts.partials.header')
 
     @yield('content')
