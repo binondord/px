@@ -228,3 +228,9 @@
 
     </main>
 @endsection
+
+@section('footer')
+    @parent
+
+    <script src="{{ asset('/js/step.js') }}"></script>
+@endsection
