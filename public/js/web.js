@@ -67,6 +67,7 @@ $(document).ready(function() {
 
         'click' : function(event, data){
             console.log('Click '+data.name);
+            document.location.href = "/step?state="+data.name;
         }
     });
 
