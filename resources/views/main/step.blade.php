@@ -183,7 +183,7 @@
                             <div class="button" id="step-4" onclick="nextStep(this)"><span class="icon">Send My Exam Kit</span></div>
                         </div>
                     </fieldset>
-
+                    {{ csrf_field() }}
                 </form>
             </div>
         </section>

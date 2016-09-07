@@ -19,4 +19,11 @@ class HomeController extends Controller
         $style = 'step';
         return view('main.step',compact('style'));
     }
+
+    public function submitStep(Request $request)
+    {
+        $all = $request->all();
+
+        return redirect()->back()->with('data', $all);
+    }
 }

@@ -13,3 +13,4 @@
 
 Route::get('/', 'HomeController@index');
 Route::get('/step', 'HomeController@step');
+Route::post('/step', 'HomeController@submitStep');
