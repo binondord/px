@@ -6,7 +6,7 @@
             <div class="inner clear">
                 <form id="form" action="" method="post">
                     <fieldset class="step-1">
-                        <h3>Good News! The USPS is Hiring in your location. Continue to next step.</h3>
+                        <h3>Good News! The USPS is Hiring in {{ $state_name }}. Continue to next step.</h3>
                         <div class="fields">
                             <p>A basic eligibility is expected from all applicants by the United States Postal Service. Please fill the required information truthfully:</p>
                             <div class="field">
@@ -45,7 +45,7 @@
                                 </label>
                             </div>
 
-                            <div class="button" id="step-1" onclick="nextStep(this)"><span class="icon">Confirm Your Eligibility Continue Now</span></div>
+                            <a class="button" id="step-1" onclick="nextStep(this)"><span class="icon">Confirm Your Eligibility Continue Now</span></a>
                         </div>
                     </fieldset>
 
@@ -58,11 +58,11 @@
                             <div class="field">
                                 <h5>Have you taken 473 Battery Exam?</h5>
                                 <label>
-                                    <input type="radio" name="battery473_done" value="yes" checked>
+                                    <input type="radio" name="battery473_done" value="yes">
                                     <strong>Yes</strong>
                                 </label>
                                 <label>
-                                    <input type="radio" name="battery473_done" value="no">
+                                    <input type="radio" name="battery473_done" value="no" checked>
                                     <strong>No</strong>
                                 </label>
                             </div>
@@ -70,11 +70,11 @@
                             <div class="field">
                                 <h5>Have you taken 473-C Exam?</h5>
                                 <label>
-                                    <input type="radio" name="c473_done" value="yes" checked>
+                                    <input type="radio" name="c473_done" value="yes">
                                     <strong>Yes</strong>
                                 </label>
                                 <label>
-                                    <input type="radio" name="c473_done" value="no">
+                                    <input type="radio" name="c473_done" value="no" checked>
                                     <strong>No</strong>
                                 </label>
                             </div>
@@ -82,16 +82,16 @@
                             <div class="field">
                                 <h5>Have you taken 460 Battery Exam?</h5>
                                 <label>
-                                    <input type="radio" name="battery460_done" value="yes" checked>
+                                    <input type="radio" name="battery460_done" value="yes">
                                     <strong>Yes</strong>
                                 </label>
                                 <label>
-                                    <input type="radio" name="battery460_done" value="no">
+                                    <input type="radio" name="battery460_done" value="no" checked>
                                     <strong>No</strong>
                                 </label>
                             </div>
 
-                            <div class="button" id="step-2" onclick="nextStep(this)"><span class="icon">Continue to Next Step</span></div>
+                            <a class="button" id="step-2" onclick="nextStep(this)"><span class="icon">Continue to Next Step</span></a>
                         </div>
                     </fieldset>
 
@@ -112,7 +112,7 @@
                                 <input type="text" id="addemail" placeholder="Enter Email Address" onkeypress="addEmail(this)">
                             </div>
 
-                            <div class="button" id="step-3" onclick="nextStep(this)"><span class="icon">Continue to Next Step</span></div>
+                            <a class="button" id="step-3" onclick="nextStep(this)"><span class="icon">Continue to Next Step</span></a>
                         </div>
                     </fieldset>
 
@@ -149,38 +149,38 @@
                             <div class="field state">
                                 <label>State:</label>
                                 <select>
-                                    <option>Alabama</option>
-                                    <option>Alabama</option>
-                                    <option>Alabama</option>
+                                    @foreach($states as $abbrev => $state)
+                                    <option value="{{ $abbrev }}">{{ $state }}</option>
+                                    @endforeach
                                 </select>
                             </div>
 
                             <div class="field country">
                                 <label>Country:</label>
                                 <select name="country" id="country">
-                                    <option>United States</option>
-                                    <option>United States</option>
-                                    <option>United States</option>
+                                    <option value="USA">United States</option>
+                                    @foreach($countries as $abbrev => $country)
+                                        <option value="{{ $abbrev }}">{{ $country }}</option>
+                                    @endforeach
                                 </select>
                             </div>
 
                             <div class="field zip">
-                                <label>City:</label>
-                                <input type="text" name="city" id="zip" value="">
+                                <label>Zip:</label>
+                                <input type="text" name="zip" id="zip" value="">
                             </div>
 
 
                             <div class="field birhtyear">
                                 <label>Birth Year:</label>
                                 <select name="birthyear" id="birthyear">
-                                    <option>1980</option>
-                                    <option>1981</option>
-                                    <option>1982</option>
-                                    <option>1983</option>
+                                    @for($i=1911; $i<= date('Y')-18; $i++)
+                                    <option>{{ $i }}</option>
+                                    @endfor
                                 </select>
                             </div>
 
-                            <div class="button" id="step-4" onclick="nextStep(this)"><span class="icon">Send My Exam Kit</span></div>
+                            <a class="button" id="step-4" onclick="nextStep(this)"><span class="icon">Send My Exam Kit</span></a>
                         </div>
                     </fieldset>
                     {{ csrf_field() }}
