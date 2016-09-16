@@ -6,8 +6,24 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use App\Http\Controllers\ControllerTraits\V1Step;
+use App\Http\Controllers\ControllerTraits\V2Step;
+use App\Http\Controllers\ControllerTraits\V3Step;
+
 class HomeController extends Controller
 {
+    use V1Step, V2Step, V3Step;
+
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        #$this->middleware('auth');
+    }
+
     private $states = [
         'HI'=>'Hawaii',
         'AK'=>'Alaska',
@@ -317,5 +333,18 @@ class HomeController extends Controller
         $status = 'Acknowledged receipt. Please expect an email from us. Thank you.';
 
         return redirect('/')->with('status', $status);
+    }
+
+    public function displaypage(Request $request)
+    {
+        $page = $request->path();
+        $style = 'home';
+        $viewfile = 'main.'.$page;
+        if(view()->exists($viewfile))
+        {
+            return view($viewfile, compact('style'));
+        }else{
+            return 'Error occurred.';
+        }
     }
 }

@@ -38,7 +38,7 @@
                     <li>Must be a U.S Citizen or have a Green Card.</li>
                     <li>Must pass USPS Exam 473</li>
                     <li>Must have basic competency in English.</li>
-                    <li>No field work experienceis required!</li>
+                    <li>No field work experience is required!</li>
                     <li>No high school diploma or GED is required!</li>
                     <li>A qualification for employment is to be drug free</li>
                     <li>Military service is treated as prior employment.</li>

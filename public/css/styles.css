@@ -175,23 +175,23 @@ h5 {
 #step .row-1 {
     padding: 60px 0;
 }
-#step .row-1 h3 {
+#step .row-1 h3, #home .row-1 h3 {
     color: #fff;
     border-radius: 4px;
     padding: 15px 10px;
     text-align: center;
     background: #0d60be;
 }
-#step .row-1 form {
+#step .row-1 form, #home .row-1 form {
     padding: 0 40px;
 }
-#step .row-1 form label {
+#step .row-1 form label, #home .row-1 form label {
     color: #383b3c;
     cursor: pointer;
     font-weight: bold;
     margin-right: 20px;
 }
-#step .row-1 form input {
+#step .row-1 form input, #home .row-1 form input,  #home .row-1 form textarea {
     padding: 10px;
     font-size: 14px;
     border-radius: 4px;
@@ -219,7 +219,7 @@ h5 {
     font-weight: bold;
     margin-bottom: 10px;
 }
-#step .row-1 form .fields .field {
+#step .row-1 form .fields .field, #home .row-1 form .fields .field  {
     margin-bottom: 20px;
 }
 #step .row-1 form .fields .button {
