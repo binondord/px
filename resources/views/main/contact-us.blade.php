@@ -11,7 +11,7 @@
         <section class="row-1">
             <div class="inner clear">
                 <h2>Contact Us</h2>
-                <h3>Please fill out your information to complete your entrance.</h3>
+                <h3>Please fill out your information so that we can contact you.</h3>
                 {{--<figure class="map"></figure>--}}
                 <div class="container">
                     <div class="row registration-page">
@@ -29,7 +29,7 @@
 
                                             <div class="col-md-6 field">
                                                 <input type="email" class="form-control" name="email" value="{{ old('email')? old('email') : $data['email'] }}">
-                                                <i class="help-block" style="position: relative; top: -7px;">(so that we can contact you)</i>
+                                                <i class="help-block" style="position: relative; top: -7px;"></i>
 
                                                 @if ($errors->has('email'))
                                                     <span class="help-block">

@@ -15,6 +15,8 @@ Route::get('/', 'HomeController@index');
 Route::get('/step', 'HomeController@step');
 Route::post('/step', 'HomeController@submitStep');
 
+Route::get('/admin','AdminController@index');
+
 
 $pages = [
     'contact-us',
@@ -48,6 +50,10 @@ Route::group(['prefix' => 'v3'], function () {
     Route::get('step', 'HomeController@v3step');
 });
 
-#Auth::routes();
+Route::group(['middleware' => 'auth'], function () {
+    Route::resource('submissions', 'SubmissionsController');
 
-#Route::get('/home', 'HomeController@index');
+    Route::resource('messages', 'MessagesController');
+});
+
+Auth::routes();
