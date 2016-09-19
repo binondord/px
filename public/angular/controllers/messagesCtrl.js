@@ -36,8 +36,9 @@ myApp.controller('messagesCtrl',
                 searchQry		: [],
                 columns 		: [
                     {'class':'col-sm-2','field':'email','title':'Email'},
-                    {'class':'col-sm-2','field':'advertiserid','title':'Advertiser'},
-                    {'class':'col-sm-2','field':'role','title':'Role'},
+                    {'class':'col-sm-2','field':'phone','title':'Phone'},
+                    {'class':'col-sm-2','field':'subject','title':'Subject'},
+                    {'class':'col-sm-2','field':'concern','title':'Concern'},
                     {'class':'col-sm-2','field':'status','title':'Status'}
                 ],
                 statuses : [
@@ -46,7 +47,7 @@ myApp.controller('messagesCtrl',
                 ],
                 roles : [
                     {'Id':1,'Title':'admin'},
-                    {'Id':2,'Title':'advertiser'}
+                    {'Id':2,'Title':'user'}
                 ]
             });
 
@@ -62,16 +63,16 @@ myApp.controller('messagesCtrl',
                     _this.isLoaded = false;
                     $http.get('/api/all-messages?page='+ pageNumber).success(function(res){
                         _this.objects = res.data;
-                angular.forEach(_this.objects, function(object){
-                                object.search_volume = parseFloat(object.search_volume);
-                            });
-                            _this.totalItems = res.total;
-                            _this.pageSize = res.per_page;
-                            _this.isReverse = !_this.isReverse;
-                            _this.order(_this.field);
-                            _this.isLoaded = true;
+                        angular.forEach(_this.objects, function(object){
+                            object.search_volume = parseFloat(object.search_volume);
                         });
-                    },
+                        _this.totalItems = res.total;
+                        _this.pageSize = res.per_page;
+                        _this.isReverse = !_this.isReverse;
+                        _this.order(_this.field);
+                        _this.isLoaded = true;
+                    });
+                },
                 idx : function($index)
                 {
                     return (_this.currentPage - 1) * _this.pageSize + $index + 1;

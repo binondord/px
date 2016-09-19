@@ -39,15 +39,15 @@
             <th colspan="3"></th>
         </tr>
         </thead>
-        <tr id='advanced_search' class="info hidden" ng-if="submissionsCtrl.isAdvanceSearch">
+        {{--<tr id='advanced_search' class="info hidden" ng-if="submissionsCtrl.isAdvanceSearch">
             <td>&nbsp;</td>
-            {{--<td><input type='text' ng-model='submissionsCtrl.searchQry.name' placeholder="Search Name"/></td>--}}
+            <td><input type='text' ng-model='submissionsCtrl.searchQry.name' placeholder="Search Name"/></td>
             <td><input type='text' ng-model='submissionsCtrl.searchQry.email' placeholder="Search Email"/></td>
             <td><input type='text' ng-model='submissionsCtrl.searchQry.advertiserid' placeholder="Search Advertiser"/></td>
             <td><input type='text' ng-model='submissionsCtrl.searchQry.role' placeholder="Search Role"/></td>
             <td><input type='text' ng-model='submissionsCtrl.searchQry.status' placeholder="Search Status"/></td>
             <td colspan="3"></td>
-        </tr>
+        </tr>--}}
         <tbody>
         <tr ng-hide="submissionsCtrl.isLoaded"><td colspan="7"><i class="fa fa-refresh fa-spin"></i></td></tr>
         <tr dir-paginate="object in submissionsCtrl.objects  |filter:submissionsCtrl.searchQry | itemsPerPage: submissionsCtrl.pageSize" pagination-id="keywords" total-items="submissionsCtrl.totalItems" current-page="submissionsCtrl.currentPage">

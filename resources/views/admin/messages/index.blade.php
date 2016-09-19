@@ -39,38 +39,30 @@
             <th colspan="3"></th>
         </tr>
         </thead>
-        <tr id='advanced_search' class="info hidden" ng-if="messagesCtrl.isAdvanceSearch">
+        {{--<tr id='advanced_search' class="info hidden" ng-if="messagesCtrl.isAdvanceSearch">
             <td>&nbsp;</td>
-            {{--<td><input type='text' ng-model='messagesCtrl.searchQry.name' placeholder="Search Name"/></td>--}}
+            <td><input type='text' ng-model='messagesCtrl.searchQry.name' placeholder="Search Name"/></td>
             <td><input type='text' ng-model='messagesCtrl.searchQry.email' placeholder="Search Email"/></td>
             <td><input type='text' ng-model='messagesCtrl.searchQry.advertiserid' placeholder="Search Advertiser"/></td>
             <td><input type='text' ng-model='messagesCtrl.searchQry.role' placeholder="Search Role"/></td>
             <td><input type='text' ng-model='messagesCtrl.searchQry.status' placeholder="Search Status"/></td>
             <td colspan="3"></td>
-        </tr>
+        </tr>--}}
         <tbody>
         <tr ng-hide="messagesCtrl.isLoaded"><td colspan="7"><i class="fa fa-refresh fa-spin"></i></td></tr>
         <tr dir-paginate="object in messagesCtrl.objects  |filter:messagesCtrl.searchQry | itemsPerPage: messagesCtrl.pageSize" pagination-id="keywords" total-items="messagesCtrl.totalItems" current-page="messagesCtrl.currentPage">
             <td><span ng-bind="messagesCtrl.idx($index)"></span></td>
-            {{--<td>
-                <div editable-text="object.name" e-name="name" e-form="rowform">
-                    <span ng-bind="object.name || 'empty'"></span>
-                </div>
-            </td>--}}
             <td>
-                <!--<div editable-text="object.email" e-name="name" e-form="rowform">-->
                 <span ng-bind="object.email || 'empty'"></span>
-                <!--</div>-->
             </td>
             <td>
-                <div e-style="width: 80%;" e-class="form-control col-md-5" e-name="advertiserid" editable-select="object.advertiserid" e-ng-options="s.Id as s.Title for (index,s) in messagesCtrl.advertisers"  e-form="rowform">
-                    <span ng-bind="messagesCtrl.showAdvertiser(object) || 'empty'"></span>
-                </div>
+                <span ng-bind="object.phone || 'empty'"></span>
             </td>
             <td>
-                <div e-style="width: 80%;" e-class="form-control col-md-5" e-name="role" editable-select="object.role" e-ng-options="s.Title as s.Title for (index,s) in messagesCtrl.roles"  e-form="rowform">
-                    <span ng-bind="messagesCtrl.showRole(object) || 'empty'"></span>
-                </div>
+                <span ng-bind="object.subject || 'empty'"></span>
+            </td>
+            <td>
+                <span ng-bind="object.concern || 'empty'"></span>
             </td>
             <td>
                 <!--<div e-style="width: 80%;" e-class="form-control col-md-5" e-name="status" editable-select="object.status" e-ng-options="s.Id as s.Title for (index,s) in messagesCtrl.statuses"  e-form="rowform">-->

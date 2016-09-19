@@ -46,7 +46,7 @@ myApp.controller('submissionsCtrl',
                 ],
                 roles : [
                     {'Id':1,'Title':'admin'},
-                    {'Id':2,'Title':'advertiser'}
+                    {'Id':2,'Title':'user'}
                 ]
             });
 
