@@ -11,7 +11,7 @@ trait UsersTrait {
         return $all;
     }
 
-    public function getSubmission($id)
+    public function getUser($id)
     {
         $object = User::find($id);
         return $object;

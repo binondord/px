@@ -52,11 +52,11 @@
         <tr ng-hide="usersCtrl.isLoaded"><td colspan="7"><i class="fa fa-refresh fa-spin"></i></td></tr>
         <tr dir-paginate="object in usersCtrl.objects  |filter:usersCtrl.searchQry | itemsPerPage: usersCtrl.pageSize" pagination-id="keywords" total-items="usersCtrl.totalItems" current-page="usersCtrl.currentPage">
             <td><span ng-bind="usersCtrl.idx($index)"></span></td>
-            {{--<td>
-                <div editable-text="object.name" e-name="name" e-form="rowform">
-                    <span ng-bind="object.name || 'empty'"></span>
+            <td>
+                <div editable-text="object.fullname" e-name="fullname" e-form="rowform">
+                    <span ng-bind="object.fullname || 'empty'"></span>
                 </div>
-            </td>--}}
+            </td>
             <td>
                 <!--<div editable-text="object.email" e-name="name" e-form="rowform">-->
                 <span ng-bind="object.email || 'empty'"></span>
