@@ -15,9 +15,6 @@ Route::get('/', 'HomeController@index');
 Route::get('/step', 'HomeController@step');
 Route::post('/step', 'HomeController@submitStep');
 
-Route::get('/admin','AdminController@index');
-
-
 $pages = [
     'contact-us',
     'faq',
@@ -52,8 +49,31 @@ Route::group(['prefix' => 'v3'], function () {
 
 Route::group(['middleware' => 'auth'], function () {
     Route::resource('submissions', 'SubmissionsController');
-
     Route::resource('messages', 'MessagesController');
+    Route::resource('users', 'UsersController');
+
+    Route::get('/admin','AdminController@index');
+
+    /*
+     * Messages
+     */
+
+    Route::get('/api/all-messages','ApiController@getAllMessages');
+    Route::get('/api/message/{message_id}','ApiController@getMessage');
+
+    /*
+     * Submissions
+     */
+
+    Route::get('/api/all-submissions','ApiController@getAllSubmissions');
+    Route::get('/api/submission/{submission_id}','ApiController@getSubmission');
+
+    /*
+     * Users
+     */
+
+    Route::get('/api/all-users','ApiController@getAllUsers');
+    Route::get('/api/user/{user_id}','ApiController@getUser');
 });
 
 Auth::routes();

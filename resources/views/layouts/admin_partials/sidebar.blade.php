@@ -44,5 +44,13 @@
                 </span>
             </a>
         </li>
+        <li class="@if($controller == 'UsersController')active @endif treeview">
+            <a href="/users">
+                <i class="fa fa-users"></i> <span>Users</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+        </li>
     </ul>
 </section>

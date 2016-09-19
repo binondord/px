@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class MessagesController extends Controller
+class UsersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +16,7 @@ class MessagesController extends Controller
     public function index()
     {
         $controller = get_class($this);
-        return view('admin.messages.index',compact('controller'));
+        return view('admin.users.index',compact('controller'));
     }
 
     /**

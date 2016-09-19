@@ -352,3 +352,6 @@ h5 {
     font-style: italic;
     color: green;
 }
+.hidden{
+    display: none;
+}
