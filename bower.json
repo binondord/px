@@ -1,7 +1,7 @@
 {
-  "name": "Forms Library",
+  "name": "Postal Exam",
   "version": "1.0.0",
-  "description": "Crowd Metric's Form Library in Laravel-5.2",
+  "description": "Crowd Metric's Postal Exam in Laravel-5.3",
   "moduleType": [
     "amd",
     "es6",
@@ -50,7 +50,8 @@
     "raphael": "~2.1.4",
     "signature_pad": "~1.5.2",
     "slick-carousel": "~1.5.9",
-    "parallax.js": "~1.4.2"
+    "parallax.js": "~1.4.2",
+    "angular-growl-v2": "^0.7.9"
   },
   "resolutions": {
     "jquery": "1.9.1 - 2"
