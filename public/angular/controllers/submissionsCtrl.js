@@ -69,7 +69,6 @@ myApp.controller('submissionsCtrl',
                             _this.pageSize = res.per_page;
                             _this.isReverse = !_this.isReverse;
                             _this.order(_this.field);
-                            _this.loadAdvertisers();
                             _this.isLoaded = true;
                         });
                     },
@@ -90,11 +89,6 @@ myApp.controller('submissionsCtrl',
                         object.search_volume = parseFloat(object.search_volume);
                     });
                     _this.objects = orderBy(_this.objects, predicate, _this.isReverse);
-                },
-                loadAdvertisers : function(){
-                    $http.get('/api/all-advertisers').success(function(res){
-                        _this.advertisers = res;
-                    });
                 },
                 updateData : function(data, object){
                     $http.put('/users/edit/'+object.id, data).success(function(res){
