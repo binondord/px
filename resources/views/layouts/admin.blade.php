@@ -95,7 +95,7 @@
 <!-- ./wrapper -->
 @section('html_footer')
     <!-- jQuery 2.1.4 -->
-    {!! Html::script('/bower_components/jquery/dist/jquery.min.js')  !!}
+    {!! Html::script('/bower_components/jquery/jquery.min.js')  !!}
     <!-- jQuery UI 1.11.4 -->
     {!! Html::script('/bower_components/jquery-ui/jquery-ui.min.js')  !!}
 
