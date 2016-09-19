@@ -15,6 +15,7 @@ class UsersTableSeeder extends Seeder
             'first' => 'Randy',
             'last' => 'Binondo',
             'email' => 'randy@crowdmetric.com',
+            'role' => 'admin',
             'password' => bcrypt('test123'),
         ]);
 

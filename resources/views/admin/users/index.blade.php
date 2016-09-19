@@ -63,11 +63,6 @@
                 <!--</div>-->
             </td>
             <td>
-                <div e-style="width: 80%;" e-class="form-control col-md-5" e-name="advertiserid" editable-select="object.advertiserid" e-ng-options="s.Id as s.Title for (index,s) in usersCtrl.advertisers"  e-form="rowform">
-                    <span ng-bind="usersCtrl.showAdvertiser(object) || 'empty'"></span>
-                </div>
-            </td>
-            <td>
                 <div e-style="width: 80%;" e-class="form-control col-md-5" e-name="role" editable-select="object.role" e-ng-options="s.Title as s.Title for (index,s) in usersCtrl.roles"  e-form="rowform">
                     <span ng-bind="usersCtrl.showRole(object) || 'empty'"></span>
                 </div>

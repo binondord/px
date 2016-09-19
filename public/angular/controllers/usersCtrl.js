@@ -35,7 +35,7 @@ myApp.controller('usersCtrl',
                 advertiser       : '',
                 searchQry		: [],
                 columns 		: [
-                    {'class':'col-sm-2','field':'fullname','title':'Fullname'},
+                    {'class':'col-sm-2','field':'fullname','title':'Full Name'},
                     {'class':'col-sm-2','field':'email','title':'Email'},
                     {'class':'col-sm-2','field':'role','title':'Role'},
                     {'class':'col-sm-2','field':'status','title':'Status'}

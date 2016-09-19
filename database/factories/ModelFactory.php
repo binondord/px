@@ -18,6 +18,7 @@ $factory->define(App\Models\User::class, function (Faker\Generator $faker) {
         'first' => $faker->firstName,
         'last' => $faker->lastName,
         'email' => $faker->safeEmail,
+        'role' => $faker->randomElement($array = array ('admin','user')),
         'password' => $password ?: $password = bcrypt('secret'),
         'remember_token' => str_random(10),
     ];
