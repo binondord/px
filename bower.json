@@ -1,5 +1,5 @@
 {
-  "name": "Postal Exam",
+  "name": "postal-exam",
   "version": "1.0.0",
   "description": "Crowd Metric's Postal Exam in Laravel-5.3",
   "moduleType": [
@@ -51,7 +51,8 @@
     "signature_pad": "~1.5.2",
     "slick-carousel": "~1.5.9",
     "parallax.js": "~1.4.2",
-    "angular-growl-v2": "^0.7.9"
+    "angular-growl-v2": "^0.7.9",
+    "bootstrap-toggle": "^2.2.2"
   },
   "resolutions": {
     "jquery": "1.9.1 - 2"
