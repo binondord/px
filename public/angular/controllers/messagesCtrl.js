@@ -5,14 +5,14 @@ try {
     myApp = angular.module("myApp", ['ui.bootstrap']);
 }
 
-myApp.controller('usersCtrl',
+myApp.controller('messagesCtrl',
     ["$rootScope","$scope","$http","$filter","$uibModal","$window", "$sanitize","growl",
         function ($rootScope,$scope, $http, $filter, $uibModal, $window, $sanitize, growl) {
 
             var _this = this;
             var orderBy = $filter('orderBy');
 
-            $scope.usersCtrl = this;
+            $scope.messagesCtrl = this;
 
             //member data
             angular.extend(this, {
@@ -60,7 +60,7 @@ myApp.controller('usersCtrl',
                 },
                 getResultsPage : function(pageNumber){
                     _this.isLoaded = false;
-                    $http.get('/api/all-users?page='+ pageNumber).success(function(res){
+                    $http.get('/api/all-messages?page='+ pageNumber).success(function(res){
                         _this.objects = res.data;
                 angular.forEach(_this.objects, function(object){
                                 object.search_volume = parseFloat(object.search_volume);
@@ -100,7 +100,7 @@ myApp.controller('usersCtrl',
                     $http.put('/users/edit/'+object.id, data).success(function(res){
                         if(res.status == 'error')
                         {
-                            $rootScope.$emit('usersCtrl.updateError', res.data);
+                            $rootScope.$emit('messagesCtrl.updateError', res.data);
                             growl.error('<span>'+res.message.join('</p></p>')+'. Reverting previous value.</span>', {});
                         }else{
                             growl.success('<span>'+res.message +'</span>', {});
@@ -172,20 +172,20 @@ myApp.controller('usersCtrl',
             _this.loadlists();
 
             // Events Listener
-            var createListener = $rootScope.$on('usersCtrl.create', function (event, data) {
+            var createListener = $rootScope.$on('messagesCtrl.create', function (event, data) {
                 _this.data.push(data.data);
             });
-            var updateListener = $rootScope.$on('usersCtrl.update', function (event, data) {
+            var updateListener = $rootScope.$on('messagesCtrl.update', function (event, data) {
                 if(data.status == 'error')
                 {
-                    //$rootScope.$emit('usersCtrl.updateError', res.data);
+                    //$rootScope.$emit('messagesCtrl.updateError', res.data);
                     growl.error('<span>'+data.message+'. Reverting previous value.</span>', {});
                 }else{
                     growl.success('<span>'+data.message +'</span>', {});
                 }
             });
 
-            var updateErrorListener = $rootScope.$on('usersCtrl.updateError', function (event, data) {
+            var updateErrorListener = $rootScope.$on('messagesCtrl.updateError', function (event, data) {
                 for(var i in _this.objects)
                 {
                     if(_this.objects[i].id == data.id)
