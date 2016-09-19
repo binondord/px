@@ -30,6 +30,7 @@ class CreateSubmissionsTable extends Migration
             $table->integer('country_id');
             $table->string('zip');
             $table->integer('birthyear');
+            $table->boolean('status');
             $table->timestamps();
         });
     }

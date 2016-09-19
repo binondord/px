@@ -19,7 +19,7 @@ class CreateMessagesTable extends Migration
             $table->string('subject');
             $table->string('email');
             $table->text('concern');
-            $table->rememberToken();
+            $table->boolean('status');
             $table->timestamps();
         });
     }
