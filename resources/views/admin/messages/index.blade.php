@@ -82,7 +82,6 @@
                 <div class="buttons" ng-show="!rowform.$visible">
                     <a ng-href="/messages/edit/[[object.id]]" data-action="/messages/edit/[[object.id]]" class="btn btn-xs btn-primary show_modal" data-item="object" data-expect="messagesCtrl.update"><i class="glyphicon glyphicon-edit"></i></a>
                     @if(Auth::user()->role == 'admin')
-                        <a ng-href="/messages/changepasswd/[[object.id]]" data-action="/messages/changepasswd/[[object.id]]" data-item="object" data-expect="messagesCtrl.update" class="btn btn-xs btn-primary show_modal"><i class="fa fa-key"></i></a>
                         <a class="btn btn-xs btn-primary" ng-click="messagesCtrl.destroyData(object.id)"><i class="glyphicon glyphicon-trash"></i></a>
                     @endif
                 </div>

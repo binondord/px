@@ -35,10 +35,16 @@ myApp.controller('submissionsCtrl',
                 advertiser       : '',
                 searchQry		: [],
                 columns 		: [
-                    {'class':'col-sm-2','field':'email','title':'Email'},
-                    {'class':'col-sm-2','field':'advertiserid','title':'Advertiser'},
-                    {'class':'col-sm-2','field':'role','title':'Role'},
-                    {'class':'col-sm-2','field':'status','title':'Status'}
+                    {'class':'col-sm-1','field':'_','title':'Checklist'},
+                    {'class':'col-sm-2','field':'fullname','title':'Full Name'},
+                    {'class':'col-sm-1','field':'email','title':'Email'},
+                    {'class':'col-sm-1','field':'phone','title':'Phone'},
+                    {'class':'col-sm-2','field':'city','title':'City'},
+                    {'class':'col-sm-2','field':'state','title':'State'},
+                    {'class':'col-sm-1','field':'country','title':'Country'},
+                    {'class':'col-sm-1','field':'zip','title':'zip'},
+                    {'class':'col-sm-1','field':'birthyear','title':'Birth Year'},
+                    {'class':'col-sm-1','field':'status','title':'Status'}
                 ],
                 statuses : [
                     {'Id':0,'Title':'Inactive'},

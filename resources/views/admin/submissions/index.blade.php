@@ -52,25 +52,37 @@
         <tr ng-hide="submissionsCtrl.isLoaded"><td colspan="7"><i class="fa fa-refresh fa-spin"></i></td></tr>
         <tr dir-paginate="object in submissionsCtrl.objects  |filter:submissionsCtrl.searchQry | itemsPerPage: submissionsCtrl.pageSize" pagination-id="keywords" total-items="submissionsCtrl.totalItems" current-page="submissionsCtrl.currentPage">
             <td><span ng-bind="submissionsCtrl.idx($index)"></span></td>
-            {{--<td>
-                <div editable-text="object.name" e-name="name" e-form="rowform">
-                    <span ng-bind="object.name || 'empty'"></span>
-                </div>
-            </td>--}}
             <td>
-                <!--<div editable-text="object.email" e-name="name" e-form="rowform">-->
+                <input type="checkbox" name="is18age"/>
+                <input type="checkbox" name="isGEDcompleted"/>
+                <input type="checkbox" name="isGreenCardHolder"/>
+                <input type="checkbox" name="done473BatteryExam"/>
+                <input type="checkbox" name="done473CExam"/>
+                <input type="checkbox" name="done460BatteryExam"/>
+            </td>
+            <td>
+                <span ng-bind="object.fullname || 'empty'"></span>
+            </td>
+            <td>
                 <span ng-bind="object.email || 'empty'"></span>
-                <!--</div>-->
             </td>
             <td>
-                <div e-style="width: 80%;" e-class="form-control col-md-5" e-name="advertiserid" editable-select="object.advertiserid" e-ng-options="s.Id as s.Title for (index,s) in submissionsCtrl.advertisers"  e-form="rowform">
-                    <span ng-bind="submissionsCtrl.showAdvertiser(object) || 'empty'"></span>
-                </div>
+                <span ng-bind="object.phone || 'empty'"></span>
             </td>
             <td>
-                <div e-style="width: 80%;" e-class="form-control col-md-5" e-name="role" editable-select="object.role" e-ng-options="s.Title as s.Title for (index,s) in submissionsCtrl.roles"  e-form="rowform">
-                    <span ng-bind="submissionsCtrl.showRole(object) || 'empty'"></span>
-                </div>
+                <span ng-bind="object.city || 'empty'"></span>
+            </td>
+            <td>
+                <span ng-bind="submissionsCtrl.showStatus(object) || 'empty'"></span>
+            </td>
+            <td>
+                <span ng-bind="submissionsCtrl.showStatus(object) || 'empty'"></span>
+            </td>
+            <td>
+                <span ng-bind="object.zip || 'empty'"></span>
+            </td>
+            <td>
+                <span ng-bind="object.birthyear || 'empty'"></span>
             </td>
             <td>
                 <!--<div e-style="width: 80%;" e-class="form-control col-md-5" e-name="status" editable-select="object.status" e-ng-options="s.Id as s.Title for (index,s) in submissionsCtrl.statuses"  e-form="rowform">-->
@@ -90,7 +102,6 @@
                 <div class="buttons" ng-show="!rowform.$visible">
                     <a ng-href="/submissions/edit/[[object.id]]" data-action="/submissions/edit/[[object.id]]" class="btn btn-xs btn-primary show_modal" data-item="object" data-expect="submissionsCtrl.update"><i class="glyphicon glyphicon-edit"></i></a>
                     @if(Auth::user()->role == 'admin')
-                        <a ng-href="/submissions/changepasswd/[[object.id]]" data-action="/submissions/changepasswd/[[object.id]]" data-item="object" data-expect="submissionsCtrl.update" class="btn btn-xs btn-primary show_modal"><i class="fa fa-key"></i></a>
                         <a class="btn btn-xs btn-primary" ng-click="submissionsCtrl.destroyData(object.id)"><i class="glyphicon glyphicon-trash"></i></a>
                     @endif
                 </div>
