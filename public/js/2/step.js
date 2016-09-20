@@ -25,11 +25,11 @@ function nextStep( event ) {
 
         });*/
 
-        $(".step-"+num).hide('slide',{direction:'right'},1000);
+        //$(".step-"+num).hide('slide',{direction:'right'},1000);
 
-        form.children[(num*1)].style.display = 'block';
+        //form.children[(num*1)].style.display = 'block';
 
-        $(".step-"+num +1).show('slide',{direction:'right'},1000);
+        //$(".step-"+num +1).show('slide',{direction:'right'},1000);
         /*
         $( ".step-"+num +1).slideDown( "slow", function() {
             // Animation complete.
