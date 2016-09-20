@@ -54,6 +54,9 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/admin','AdminController@index');
 
+    Route::get('/users/changepasswd/{userid}','UsersController@showChangePasswd');
+    Route::post('/users/changepasswd/{userid}','UsersController@saveChangePasswd');
+
     /*
      * Messages
      */

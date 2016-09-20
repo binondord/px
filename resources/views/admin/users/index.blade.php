@@ -15,7 +15,7 @@
 @endsection
 
 @section('buttons')
-    <a href="{{ url('/users/add/') }}" class="btn btn-primary"><i class="fa fa-plus"></i> Add User</a>
+    <a href="{{ url('/users/add/') }}" class="btn btn-primary show_modal"><i class="fa fa-plus"></i> Add User</a>
 @endsection
 
 @section('advancesearch')

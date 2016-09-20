@@ -21,6 +21,7 @@
     @yield('content')
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
+    {!! Html::script('/bower_components/jquery-ui/jquery-ui.min.js')  !!}
 
     @section('footer')
         @include('layouts.partials.footer')

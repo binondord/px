@@ -20,15 +20,21 @@ function nextStep( event ) {
         var num = Number(step[1]);
         console.log('num: '+ num);
 
-        $( ".step-"+num ).slideUp( "slow", function() {
+        /*$( ".step-"+num ).slideUp( "slow", function() {
             // Animation complete.
 
-        });
+        });*/
+
+        $(".step-"+num).hide('slide',{direction:'right'},1000);
+
         form.children[(num*1)].style.display = 'block';
+
+        $(".step-"+num +1).show('slide',{direction:'right'},1000);
+        /*
         $( ".step-"+num +1).slideDown( "slow", function() {
             // Animation complete.
             console.log(' Animation complete.');
-        });
+        });*/
         /*$( ".step-"+num ).slideUp( "slow", function() {
 
         });

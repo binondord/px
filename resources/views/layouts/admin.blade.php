@@ -168,6 +168,9 @@
     <!-- Bootstrap Toggle -->
     {!! Html::script('/bower_components/bootstrap-toggle/js/bootstrap-toggle.min.js')  !!}
 
+    <!-- jQuery Easing -->
+    {!! Html::script('/bower_components/jquery.easing/js/jquery.easing.min.js')  !!}
+
     @yield('script')
 @show
 
