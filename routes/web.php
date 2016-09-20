@@ -22,7 +22,8 @@ $pages = [
     'study-materials',
     'about',
     'privacy-policy',
-    'terms-of-service'
+    'terms-of-service',
+    'checkout'
 ];
 
 foreach($pages as $page)
