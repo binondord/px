@@ -10,7 +10,9 @@
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('css/styles.css') }}">
+    @section('styles')
+        <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('css/styles.css') }}">
+    @show
 
     @yield('scripts')
 
@@ -20,8 +22,11 @@
 
     @yield('content')
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
+    {{--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>--}}
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     {!! Html::script('/bower_components/jquery-ui/jquery-ui.min.js')  !!}
+
+
 
     @section('footer')
         @include('layouts.partials.footer')

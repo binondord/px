@@ -25,6 +25,8 @@ function nextStep( event ) {
 
         });*/
 
+        $('.regular').slick("slickNext");
+
         //$(".step-"+num).hide('slide',{direction:'right'},1000);
 
         //form.children[(num*1)].style.display = 'block';
