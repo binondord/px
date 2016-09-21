@@ -223,7 +223,7 @@ h5 {
 #step .row-1 form .fields .field, #home .row-1 form .fields .field  {
     margin-bottom: 20px;
 }
-#step .row-1 form .fields .button {
+#step .row-1 form .fields .button, #home .row-1 form .fields .button {
     display: block;
     font-size: 30px;
     margin-top: 60px;
@@ -237,22 +237,26 @@ h5 {
 
 
 /* Step 3 */
-#step .row-1 form .step-3 .field {
+#step .row-1 form .step-3 .field, #home .row-1 form .field {
     width: 400px;
     margin: 40px auto;
 }
-#step .row-1 form .step-3 .field input {
+#step .row-1 form .step-3 .field input, #home .row-1 form .field input {
     width: 92%;
     padding: 15px;
     font-size: 16px;
 }
-#step .row-1 form .step-3 .field label {
+#step .row-1 form .step-3 .field label, #home .row-1 form .field label {
     display: block;
     text-align: center;
     margin-bottom: 15px;
 }
 #step .row-1 form .step-3 .button {
     margin-top: 40px;
+}
+
+#home .note{
+    background:#4fa0f1;
 }
 
 
