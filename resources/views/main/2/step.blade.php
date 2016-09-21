@@ -23,11 +23,11 @@
 
                     .slider {
                         /*width: 50%;*/
-                        margin: 100px auto;
+                        margin: 0px auto;
                     }
 
                     .slick-slide {
-                        margin: 0px 20px;
+                        /*margin: 0px 20px;*/
                     }
 
                     .slick-prev:before,
@@ -274,7 +274,8 @@
         $(document).ready(function() {
             $(".regular").slick({
                 arrows: false,
-                infinite: false
+                infinite: false,
+                rtl : false
             });
         });
     </script>
