@@ -431,9 +431,16 @@ textarea {
 
 .box-guarantee-wrap { 
 	float: left;
-	padding-top: 20px; 
+	padding-top: 20px;
+    padding-bottom: 20px;
 	text-align: center;
 	width: 100%;
+}
+
+.txtlabel{
+    font-weight: bold;
+    vertical-align: middle;
+    margin-top: 14px;
 }
 
 

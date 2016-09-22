@@ -3,6 +3,7 @@
 @section('styles')
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('/css/styles.css') }}">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('/css/bootstrap.min.css') }}">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('/css/jquery.fancybox.css') }}">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('/css/style.css') }}">
 @endsection
@@ -22,9 +23,6 @@
                     <div class="content-wraper">
                         <div class="content-inner-wrap" id="checkout">
                             <div class="row">
-                                <div class="col-xs-12 col-md-6">
-                                    &nbsp;
-                                </div>
                                 <div class="col-xs-12 col-md-6">
                                     <div class="box-form-wrap clearfix" id="checkout-form">
                                         <form>
@@ -71,22 +69,22 @@
                                                 </div>
 
                                                 <div class="box-form-inputs clearfix">
-                                                    <div class="input">
-                                                        <label>First Name</label>
-                                                        <div class="form-group box-input-name">
-                                                            <input type="text" placeholder="First Name">
+                                                    <div class="">
+                                                        <span class="txtlabel col-md-3">First Name</span>
+                                                        <div class="col-md-9 form-group box-input-name">
+                                                            <input type="text" placeholder="" name="first">
                                                         </div>
                                                     </div>
-                                                    <div class="input">
-                                                        <label>Last Name</label>
-                                                        <div class="form-group box-input-name">
-                                                            <input type="text" placeholder="Last Name">
+                                                    <div class="">
+                                                        <span class="txtlabel col-md-3">Last Name</span>
+                                                        <div class="col-md-9 form-group box-input-name">
+                                                            <input type="text" placeholder="" name="last">
                                                         </div>
                                                     </div>
-                                                    <div class="input">
-                                                        <label>Email Address</label>
-                                                        <div class="form-group box-input-name">
-                                                            <input type="text" placeholder="Email Address">
+                                                    <div class="">
+                                                        <span class="txtlabel col-md-3">Email Address</span>
+                                                        <div class="col-md-9 form-group box-input-name">
+                                                            <input type="text" placeholder="" name="email">
                                                         </div>
                                                     </div>
 
@@ -148,12 +146,16 @@
                                                 <div class="footer-form-group clearfix">
                                                     <input type="button" value="Click here to pay now">
                                                 </div>
+                                                <div class="box-guarantee-wrap">
+                                                    <img src="images/guarantee.png">
+                                                </div>
                                             </div><!-- end of box-form-item -->
                                         </form>
                                     </div>
-                                    <div class="box-guarantee-wrap">
-                                        <img src="images/guarantee.png">
-                                    </div>
+
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    &nbsp;
                                 </div>
                             </div>
                         </div>
