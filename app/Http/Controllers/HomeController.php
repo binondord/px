@@ -332,7 +332,7 @@ class HomeController extends Controller
 
         $status = 'Acknowledged receipt. Please expect an email from us. Thank you.';
 
-        return redirect('/')->with('status', $status);
+        return redirect('/checkout')->with('status', $status);
     }
 
     public function displaypage(Request $request)
