@@ -23,7 +23,7 @@
                         <div class="content-inner-wrap" id="checkout">
                             <div class="row">
                                 <div class="col-xs-12 col-md-6">
-
+                                    &nbsp;
                                 </div>
                                 <div class="col-xs-12 col-md-6">
                                     <div class="box-form-wrap clearfix" id="checkout-form">
@@ -41,7 +41,7 @@
 																</span>
 																<span class="col-label">
 																	<strong>RECOMMENDED</strong>
-																	<small>1 month of UNLIMITED Docs</small>
+																	<small>1 month of UNLIMITED access</small>
 																</span>
 															</span>
 															<span class="col-xs-12 col-sm-4 price">
@@ -56,7 +56,7 @@
 																</span>
 																<span class="col-label">
 																	<strong>MODERATE USERS</strong>
-																	<small>3 months of UNLIMITED Docs</small>
+																	<small>3 months of UNLIMITED access</small>
 																</span>
 															</span>
 															<span class="col-xs-12 col-sm-4 price">
@@ -142,7 +142,7 @@
                                                 <div class="secured clearfix">
                                                     <input type="checkbox" />
 														<span>
-														By clicking “Continue,” I am providing my electronic signature authorizing Postal Exam to charge my credit card as described, until I cancel. I understand that I will be charged $22.86 every month until I cancel my account, which can be done at any time, hassle free by contacting FormsLibrary’s US-based member care center.
+														By clicking “Continue,” I am providing my electronic signature authorizing PostalExam to charge my credit card as described, until I cancel. I understand that I will be charged $22.86 every month until I cancel my account, which can be done at any time, hassle free by contacting PostalExams’s US-based member care center.
 														</span>
                                                 </div>
                                                 <div class="footer-form-group clearfix">
