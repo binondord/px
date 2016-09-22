@@ -110,13 +110,18 @@
                                                         <div class="expiration-form-inputs clearfix">
 																<span class="exp-date col-xs-12 col-sm-4">
 																	<select>
+                                                                        <option>01(Jan)</option>
+                                                                        <option>02(Feb)</option>
+                                                                        <option>03(Mar)</option>
+                                                                        <option>04(Apr)</option>
+                                                                        <option>05(May)</option>
+                                                                        <option>06(Jun)</option>
+                                                                        <option>07(Jul)</option>
+                                                                        <option>08(Aug)</option>
                                                                         <option>09(Sep)</option>
-                                                                        <option>10(Sep)</option>
-                                                                        <option>11(Sep)</option>
-                                                                        <option>12(Sep)</option>
-                                                                        <option>13(Sep)</option>
-                                                                        <option>14(Sep)</option>
-                                                                        <option>15(Sep)</option>
+                                                                        <option>10(Oct)</option>
+                                                                        <option>11(Nov)</option>
+                                                                        <option>12(Dec)</option>
                                                                     </select>
 																</span>
 																<span class="exp-yr col-xs-12 col-sm-4">
@@ -155,7 +160,23 @@
 
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    &nbsp;
+                                    <div class="content-form-text">
+                                        <h2 class="content-form-title">Terms of Purchase</h2>
+                                        <p>If you ever feel dissatisfied with PostalExam, simply give our Customer Support a call at 1-123-456-7890, available 24/7. We’re available seven days a week and we look forward to serving you.</p>
+                                        <ol>
+                                            <li>Your purchase will appear on your bank statement under the name "POSTALEXAM.US".</li>
+
+                                            <li>Your current IP Address and other information has been recorded. All attempts at fraud will be prosecuted.</li>
+
+                                            <li>Postal Exam is provided by United States Postal Service.</li>
+
+                                            <li>Postal Exam reserves all rights.</li>
+
+                                            <li>All information submitted here is subjected to <a href="https://www.postalexam.us.com">Postal Exam</a> privacy policy</li>
+                                        </ol>
+                                        <h2 class="content-form-title">Maybe You’ve heard of us:</h2>
+                                        <p><img class="img-responsive" src="images/seen-on.png"></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
