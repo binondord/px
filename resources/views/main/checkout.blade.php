@@ -71,9 +71,9 @@
                                                 </div>
 
                                                 <div class="box-form-inputs clearfix">
-                                                    {{--<div class="form-group box-input-name">
+                                                    <div class="form-group box-input-name">
                                                         <input type="text" placeholder="Card Number">
-                                                    </div>--}}
+                                                    </div>
                                                     <div class="form-group box-input-name">
                                                         <input type="text" placeholder="Cardholder Name">
                                                     </div>
@@ -125,7 +125,7 @@
 														</span>
                                                 </div>--}}
                                                 <div class="footer-form-group clearfix">
-                                                    <button class="button" type="button" value="">Click here to pay now</button>
+                                                    <button class="check" type="button" value="">Click here to pay now</button>
                                                 </div>
                                                 <div class="box-guarantee-wrap">
                                                     <img src="images/guarantee.png">
