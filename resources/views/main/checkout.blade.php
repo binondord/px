@@ -35,7 +35,7 @@
                                                     <div class="">
                                                         <span class="txtlabel col-md-4">Amount (USD $)</span>
                                                         <div class="col-md-8 form-group box-input-name">
-                                                            <input type="text" placeholder="" name="first" disabled>
+                                                            <input type="text" placeholder="" name="first">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -71,9 +71,9 @@
                                                 </div>
 
                                                 <div class="box-form-inputs clearfix">
-                                                    <div class="form-group box-input-name">
+                                                    {{--<div class="form-group box-input-name">
                                                         <input type="text" placeholder="Card Number">
-                                                    </div>
+                                                    </div>--}}
                                                     <div class="form-group box-input-name">
                                                         <input type="text" placeholder="Cardholder Name">
                                                     </div>
@@ -118,12 +118,12 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="secured clearfix">
+                                                {{--<div class="secured clearfix">
                                                     <input type="checkbox" />
 														<span>
 														By clicking “Continue,” I am providing my electronic signature authorizing PostalExam to charge my credit card as described, until I cancel. I understand that I will be charged $22.86 every month until I cancel my account, which can be done at any time, hassle free by contacting PostalExams’s US-based member care center.
 														</span>
-                                                </div>
+                                                </div>--}}
                                                 <div class="footer-form-group clearfix">
                                                     <input type="button" value="Click here to pay now">
                                                 </div>
@@ -138,7 +138,7 @@
                                 <div class="col-xs-12 col-md-6">
                                     <div class="content-form-text">
                                         <h2 class="content-form-title">Terms of Purchase</h2>
-                                        <p>If you ever feel dissatisfied with PostalExam, simply give our Customer Support a call at 1-123-456-7890, available 24/7. We’re available seven days a week and we look forward to serving you.</p>
+                                        {{--<p>If you ever feel dissatisfied with PostalExam, simply give our Customer Support a call at 1-123-456-7890, available 24/7. We’re available seven days a week and we look forward to serving you.</p>--}}
 
                                         <div class="text-center">
                                             <img src="images/pe_book.png" width="200px">
