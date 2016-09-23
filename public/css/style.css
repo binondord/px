@@ -201,7 +201,8 @@ textarea {
 
 .sub-content { 
 	float: left; 
-	padding: 65px 0; 
+	padding: 30px 0;
+    font-size: 12px;
 	width: 100%;
 }
 
@@ -445,7 +446,7 @@ textarea {
 .txtlabel{
     font-weight: bold;
     vertical-align: middle;
-    margin-top: 14px;
+    margin-top: 10px;
 }
 
 
