@@ -125,7 +125,7 @@
 														</span>
                                                 </div>--}}
                                                 <div class="footer-form-group clearfix">
-                                                    <button class="check" type="button" value="">Click here to pay now</button>
+                                                    <button class="button" type="button" value="">Click here to pay now</button>
                                                 </div>
                                                 <div class="box-guarantee-wrap">
                                                     <img src="images/guarantee.png">
