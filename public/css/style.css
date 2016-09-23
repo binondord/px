@@ -315,7 +315,7 @@ textarea {
 	padding: 20px 20px 0;
 	margin-bottom: 25px; 
 }
-.box-form-wrap .footer-form-group input {
+.box-form-wrap .footer-form-group .button {
 	background-color: #37ab64;
 	border: 0;
 	color: #fff;
