@@ -137,13 +137,13 @@
                                 </div>
                                 <div class="col-xs-12 col-md-6">
                                     <div class="content-form-text">
-                                        <h2 class="content-form-title">Terms of Purchase</h2>
                                         {{--<p>If you ever feel dissatisfied with PostalExam, simply give our Customer Support a call at 1-123-456-7890, available 24/7. We’re available seven days a week and we look forward to serving you.</p>--}}
 
                                         <div class="text-center">
                                             <img src="images/pe_book.png" width="200px">
                                         </div>
 
+                                        <h3 class="content-form-title">Terms of Purchase</h3>
                                         <ol>
                                             <li>Your purchase will appear on your bank statement under the name "POSTALEXAM.US".</li>
 
