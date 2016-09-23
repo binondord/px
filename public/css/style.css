@@ -256,13 +256,13 @@ textarea {
 	padding: 30px;
 	width: 100%;
 }
-.box-form-wrap .box-form-inputs { padding: 20px; }
+.box-form-wrap .box-form-inputs { padding: 5px 20px; }
 .box-form-wrap .form-group {
 	border: 1px solid #a4a4a4;
 	border-radius: 4px;
 	position: relative;
 	padding: 8px 8px;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 }
 .box-form-wrap p { 
 	font-size: 14px; 
