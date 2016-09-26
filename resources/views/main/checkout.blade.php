@@ -35,7 +35,7 @@
                                                     <div class="">
                                                         <span class="txtlabel col-md-4">Amount (USD $)</span>
                                                         <div class="col-md-8 form-group box-input-name">
-                                                            <input type="text" placeholder="" name="first">
+                                                            $39.00
                                                         </div>
                                                     </div>
                                                 </div>
