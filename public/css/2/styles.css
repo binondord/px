@@ -188,7 +188,7 @@ h5 {
 #step .row-1 form label, #home .row-1 form label {
     color: #383b3c;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: normal;
     margin-right: 20px;
 }
 #step .row-1 form input, #home .row-1 form input,  #home .row-1 form textarea {
@@ -224,13 +224,19 @@ h5 {
 }
 #step .row-1 form .fields .button {
     display: block;
+    font-size: 16px;
+    margin-top: 60px;
+    margin:0 auto;
+    width:350px;
+    padding: 6px 16px;
+    /*display: block;
     font-size: 30px;
     margin-top: 60px;
-    padding: 20px 50px;
+    padding: 20px 50px;*/
 }
 #step .row-1 form .fields .button .icon {
     display: inline-block;
-    padding: 10px 70px 10px 0;
+    padding: 18px 70px 18px 0;
     background: url(../../images/arrow-o.png) right center no-repeat;
 }
 

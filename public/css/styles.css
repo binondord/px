@@ -227,7 +227,8 @@ h5 {
     display: block;
     font-size: 30px;
     margin-top: 60px;
-    padding: 20px 50px;
+    margin:0 auto;
+    padding: 6px 16px;
 }
 #step .row-1 form .fields .button .icon {
     display: inline-block;

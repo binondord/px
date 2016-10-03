@@ -45,11 +45,11 @@
                                     <h5>Are you 18 years of age or older?</h5>
                                     <label>
                                         <input type="radio" name="age" value="yes" checked>
-                                        <strong>Yes</strong>
+                                        Yes
                                     </label>
                                     <label>
                                         <input type="radio" name="age" value="no">
-                                        <strong>No</strong>
+                                        No
                                     </label>
                                 </div>
 
@@ -57,11 +57,11 @@
                                     <h5>Are you a high school graduate or have you completed a GED equivalent?</h5>
                                     <label>
                                         <input type="radio" name="completed" value="yes" checked>
-                                        <strong>Yes</strong>
+                                        Yes
                                     </label>
                                     <label>
                                         <input type="radio" name="completed" value="no">
-                                        <strong>No</strong>
+                                        No
                                     </label>
                                 </div>
 
@@ -69,11 +69,11 @@
                                     <h5>Are you a citizen of U.S. or a green card holder?</h5>
                                     <label>
                                         <input type="radio" name="holder" value="yes" checked>
-                                        <strong>Yes</strong>
+                                        Yes
                                     </label>
                                     <label>
                                         <input type="radio" name="holder" value="no">
-                                        <strong>No</strong>
+                                        No
                                     </label>
                                 </div>
 
@@ -90,11 +90,11 @@
                                     <h5>Have you taken 473 Battery Exam?</h5>
                                     <label>
                                         <input type="radio" name="battery473_done" value="yes">
-                                        <strong>Yes</strong>
+                                        Yes
                                     </label>
                                     <label>
                                         <input type="radio" name="battery473_done" value="no" checked>
-                                        <strong>No</strong>
+                                        No
                                     </label>
                                 </div>
 
@@ -102,11 +102,11 @@
                                     <h5>Have you taken 473-C Exam?</h5>
                                     <label>
                                         <input type="radio" name="c473_done" value="yes">
-                                        <strong>Yes</strong>
+                                        Yes
                                     </label>
                                     <label>
                                         <input type="radio" name="c473_done" value="no" checked>
-                                        <strong>No</strong>
+                                        No
                                     </label>
                                 </div>
 
@@ -114,11 +114,11 @@
                                     <h5>Have you taken 460 Battery Exam?</h5>
                                     <label>
                                         <input type="radio" name="battery460_done" value="yes">
-                                        <strong>Yes</strong>
+                                        Yes
                                     </label>
                                     <label>
                                         <input type="radio" name="battery460_done" value="no" checked>
-                                        <strong>No</strong>
+                                        No
                                     </label>
                                 </div>
 
