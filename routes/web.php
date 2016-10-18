@@ -101,6 +101,7 @@ if(!function_exists('setRoute')) {
     {
         array_map(function ($r) {
             switch ($r) {
+                case 'step':
                 case 'checkout':
                     Route::get($r, 'SiteController@serve');
                     Route::post($r, 'SiteController@serve');

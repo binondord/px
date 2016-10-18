@@ -25,6 +25,7 @@
                 </div>
 
                 <button class="button"><span class="span">Continue to Next Step</span></button>
+                {{ csrf_field() }}
             </form>
         </section>
         <section class="row-2 clear">
