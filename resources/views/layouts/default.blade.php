@@ -11,14 +11,14 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Styles -->
     @section('styles')
-        <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('css/styles.css') }}">
+        {{--<link rel="stylesheet" type="text/css" media="screen" href="{{ asset('css/styles.css') }}">--}}
     @show
 
     @yield('scripts')
 
 </head>
-<body id="{{ $style }}">
-    @include('layouts.partials.header')
+<body id="{{ $style }}" @yield('bodyAttr')>
+
 
     @yield('content')
 
@@ -29,7 +29,7 @@
 
 
     @section('footer')
-        @include('layouts.partials.footer')
+        {{--include('layouts.partials.footer')--}}
     @show
 
 
