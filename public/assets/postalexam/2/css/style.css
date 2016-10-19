@@ -66,13 +66,15 @@ h5 {
 .button {
     border: 0;
     color: #fff;
-    font-size: 30px;
+    font-size: 29px;
     cursor: pointer;
     font-weight: bold;
-    padding: 25px 50px;
+    padding: 30px 50px;
     text-align: center;
     border-radius: 4px;
     background: #1155c3;
+    width:604px;
+    margin: 0 auto;
 }
 
 
@@ -284,7 +286,7 @@ h5 {
 
 /* Step Row 1 */
 #step .row-1 {
-    padding: 50px 40px;
+    padding: 20px 25px;
 }
 #step .row-1 h3 {
     color: #fff;
