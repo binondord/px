@@ -142,7 +142,7 @@ h5 {
     border: 1px solid #ececec;
 }
 #content .row-1 form .field {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 #content .row-1 form .field label {
     display: block;
@@ -154,7 +154,7 @@ h5 {
 #content .row-1 form .field input {
     width: 100%;
     padding: 10px 0;
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 500;
     text-indent: 10px;
     border-radius: 4px;
