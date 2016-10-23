@@ -4,6 +4,7 @@
     @parent
     <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,600' />
     <link href="{{ asset($assetPath.$version.'/css/style.css', \Custom::secureUrl()) }}" rel="stylesheet" />
+    {!! Html::style('/bower_components/bootstrap/dist/css/bootstrap.min.css')  !!}
 @endsection
 
 @section('bodyAttr') class=v{{$version}} @endsection
@@ -16,15 +17,20 @@
             <h2>To Get Started Please Select Your State Below</h2>
             <form action="/v{{$version}}/step" method="POST">
                 <div class="field">
-                    <select name="selectedstate">
-                        <option>Select Your State</option>
+                    <select class="state" name="selectedstate">
+                        <option value="">-- Select Your State --</option>
                         @foreach($states as $abbrev => $state)
                             <option value="{{$abbrev}}">{{$state}}</option>
                         @endforeach
                     </select>
                 </div>
+                @if (session('status'))
+                    <div class="alert alert-danger">
+                        {{ session('status') }}
+                    </div>
+                @endif
 
-                <button class="button"><span class="span">Continue to Next Step</span></button>
+                <button type="button" class="button"><span class="span">Continue to Next Step</span></button>
                 {{ csrf_field() }}
             </form>
         </section>
@@ -60,9 +66,18 @@
 @section('footer')
     @parent
 
+    <script>
+        $(document).ready(function(){
+            $('.button').click(function(){
+                var value = $(this).parent().find('.state').val();
+                window.location.href = '/v{{$version}}/step?state='+value;
+            });
+        });
+    </script>
     <div id="alert"></div>
     <script src="{{ asset('/js/lib/raphael.js') }}"></script>
     <script src="{{ asset('/js/lib/color.jquery.js') }}"></script>
     <script src="{{ asset('/js/lib/jquery.usmap.js') }}"></script>
     <script src="{{ asset('/js/web.js') }}"></script>
+    {!! Html::script('/bower_components/bootstrap/dist/js/bootstrap.min.js')  !!}
 @endsection

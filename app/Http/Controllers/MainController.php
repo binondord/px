@@ -28,6 +28,7 @@ class MainController extends Controller
             'title',
             'site_name',
             'site_domain',
+            'state',
             'view',
             'asset_dir',
             'pluginurl',
@@ -117,7 +118,7 @@ class MainController extends Controller
      * @param $blade string
      * @return \Illuminate\View\View
      */
-    public function view($blade)
+    public function view($blade, $variables=array())
     {
 
         $sharedData = $this->sharedData;
@@ -144,6 +145,10 @@ class MainController extends Controller
         }
 
         view()->share('style',$bodyStyle);
+
+        foreach($variables as $key=>$variable){
+            view()->share($key,$variable);
+        }
 
         if($isMobile){
             $viewFile = $mobileViewPath;

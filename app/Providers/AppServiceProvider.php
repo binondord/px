@@ -5,6 +5,7 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 use Illuminate\Foundation\AliasLoader;
+use App\Http\ViewComposers\CommonComposer;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,7 +24,7 @@ class AppServiceProvider extends ServiceProvider
     {
         View::share('style', 'home');
         View::composer(
-            '*', \App\Http\ViewComposers\CommonComposer::class
+            '*', CommonComposer::class
         );
     }
 

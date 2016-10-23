@@ -76,6 +76,10 @@ h5 {
     width:604px;
     margin: 0 auto;
 }
+.button:hover{
+    background-color: #103088;
+    border: 0px solid #143799;
+}
 
 
 /* Header */
@@ -87,7 +91,7 @@ h5 {
 #header .logo {
     display: block;
     padding: 24px 95px;
-    width: 18px;
+    width: 213px;
     background: url(../images/logo.png) center center no-repeat;
 }
 #header .menu li {
@@ -313,7 +317,7 @@ h5 {
     margin-bottom: 10px;
 }
 #step .row-1 form .fields .field {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 

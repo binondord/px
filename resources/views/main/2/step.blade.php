@@ -138,7 +138,7 @@
 
                                 <div class="field">
                                     <label>Enter Your Email Below Now</label>
-                                    <input type="text" id="addemail" placeholder="Enter Email Address" onkeypress="addEmail(this)">
+                                    <input type="text" id="addemail" name="email" placeholder="Enter Email Address" onkeypress="addEmail(this)">
                                 </div>
 
                                 <a class="button" id="step-3" onclick="nextStep(this)"><span class="icon">Continue to Next Step</span></a>
@@ -177,7 +177,7 @@
 
                                 <div class="field state">
                                     <label>State:</label>
-                                    <select>
+                                    <select name="state">
                                         @foreach($states as $abbrev => $state)
                                             <option value="{{ $abbrev }}">{{ $state }}</option>
                                         @endforeach
