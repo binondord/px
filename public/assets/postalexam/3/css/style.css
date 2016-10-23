@@ -416,3 +416,9 @@ h5 {
 #footer .right a {
     margin-left: 20px;
 }
+
+#step .row-1 form .step-4 .field label.error {
+    color: red;
+    font-weight: normal;
+    text-align: right;
+}

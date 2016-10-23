@@ -15,6 +15,7 @@
     @show
 
     @yield('scripts')
+    @yield('head')
 
 </head>
 <body id="{{ $style }}" @yield('bodyAttr')>
@@ -32,6 +33,7 @@
         {{--include('layouts.partials.footer')--}}
     @show
 
+    @yield('script')
 
 </body>
 </html>
