@@ -536,3 +536,9 @@ textarea {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  }
+
+#step-4 .form-group label.error{
+    font-weight: normal;
+    font-size: 14px;
+    color:red;
+}

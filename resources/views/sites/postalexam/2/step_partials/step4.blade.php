@@ -4,27 +4,27 @@
 
         <div class="field email">
             <label>Email Address:</label>
-            <input type="text" name="email" id="email" value="">
+            <input type="text" name="email" id="email">
         </div>
 
         <div class="field firstname">
             <label>First Name:</label>
-            <input type="text" name="firstname" id="firstname" value="">
+            <input type="text" name="firstname" id="firstname">
         </div>
 
         <div class="field lastname">
             <label>Last Name:</label>
-            <input type="text" name="lastname" id="lastname" value="">
+            <input type="text" name="lastname" id="lastname">
         </div>
 
         <div class="field phone">
             <label>Phone Number:</label>
-            <input type="text" name="phone" id="phone" value="">
+            <input type="text" name="phone" id="phone">
         </div>
 
         <div class="field city">
             <label>City:</label>
-            <input type="text" name="city" id="city" value="">
+            <input type="text" name="city" id="city">
         </div>
 
         <div class="field state">

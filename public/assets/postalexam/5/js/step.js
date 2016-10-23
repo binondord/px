@@ -7,7 +7,6 @@ function addEmail( event ) {
 
 
 function nextStep( event ) {
-    console.log('nextstep');
 
     var step = event.id.split('-');
 
@@ -15,17 +14,18 @@ function nextStep( event ) {
 
 
     if( Number(step[1]) < 4 ) {
+        if(step[1] == 3) {
+            var email = $('#addemail').val();
+            $('#email').val(email);
+            if(email == '') {
 
-        //form.children[Number(step[1])].style.display = 'block';
-        var num = Number(step[1]);
-        console.log('num: '+ num);
-
-        /*$( ".step-"+num ).slideUp( "slow", function() {
-            // Animation complete.
-
-        });*/
-
-        $('.regular').slick("slickNext");
+                $.growl.error({message: "Please enter your email address."});
+            }else {
+                $('.regular').slick("slickNext");
+            }
+        }else{
+            $('.regular').slick("slickNext");
+        }
 
         //$(".step-"+num).hide('slide',{direction:'right'},1000);
 
@@ -43,6 +43,6 @@ function nextStep( event ) {
         */
     } else {
 
-        form.submit();
+        $(form).submit();
     }
 }

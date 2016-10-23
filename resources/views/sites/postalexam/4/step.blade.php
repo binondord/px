@@ -104,6 +104,26 @@
                 infinite: false,
                 rtl : false
             });
+
+            $('form').validate({
+                rules : {
+                    email : {
+                        email: true,
+                        required: true
+                    },
+                    firstname: 'required',
+                    lastname : 'required',
+                    phone : 'required',
+                    city : 'required',
+                    state :'required',
+                    country : 'required',
+                    zip : 'required',
+                    birthyear : 'required'
+                },
+                messages : {
+                    email : 'Please enter a valid email address'
+                }
+            });
         });
     </script>
     <script src="{{ asset('/js/lib/raphael.js') }}"></script>

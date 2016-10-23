@@ -10,7 +10,7 @@
                         <label>Email Address</label>
                     </div>
                     <div class="col-md-7">
-                        <input name="email" type="text"/>
+                        <input id="email" name="email" type="text"/>
                     </div>
                 </div>
             </div>
