@@ -4,6 +4,7 @@
     @parent
     <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,600' />
     <link href="{{ asset($assetPath.$version.'/css/style.css', \Custom::secureUrl()) }}" rel="stylesheet" />
+    <link href="{{ asset($assetPath.$version.'/css/loclookups.css', \Custom::secureUrl()) }}" rel="stylesheet" />
     {!! Html::style('/bower_components/bootstrap/dist/css/bootstrap.min.css')  !!}
 @endsection
 
@@ -22,7 +23,7 @@
                         <p>Enter your Zip Code to start.</p>
                         <div class="form-group clearfix">
                             <div class="col-xs-12 col-md-7">
-                                <input type="text"/>
+                                <input type="text" id="location"/>
                             </div>
                             <div class="col-xs-12 col-md-5">
                                 <button>Search</button>
@@ -74,10 +75,20 @@
 
 @section('footer')
 
+    <script>
+        $(document).ready(function(){
+            var lookup = 'http://lookups.adbrilliant.com/loc/';
+
+            $('#location').autocomplete({
+                serviceUrl: lookup
+            });
+        });
+    </script>
     <div id="alert"></div>
     <script src="{{ asset('/js/lib/raphael.js') }}"></script>
     <script src="{{ asset('/js/lib/color.jquery.js') }}"></script>
     <script src="{{ asset('/js/lib/jquery.usmap.js') }}"></script>
     <script src="{{ asset('/js/web.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/lib/js/jquery.autocomplete.js', \Custom::secureUrl()) }}"></script>
     {!! Html::script('/bower_components/bootstrap/dist/js/bootstrap.min.js')  !!}
 @endsection
