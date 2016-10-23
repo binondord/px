@@ -16,12 +16,14 @@
         <div class="main-cotent-wrapper" id="main-2">
             <div class="main-inner-wrap clearfix">
                 <h1>Please Click Your State Below</h1>
-                @if (session('status'))
-                    <div class="alert alert-success">
-                        {{ session('status') }}
-                    </div>
-                @endif
+
                 <div class="state-form-wrap clearfix">
+                    @if (session('status'))
+                        <div class="col-xs-offset-4 col-xs-8">
+                            <span class="col-xs-4 alert alert-danger">{{ session('status') }}</span>
+
+                        </div>
+                    @endif
                     <form action="/v4/step">
                         @foreach($states as $abbrev => $state)
                             <div class="state-btn col-xs-12 col-sm-6 col-md-4 col-lg-3">

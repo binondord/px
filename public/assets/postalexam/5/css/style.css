@@ -511,7 +511,7 @@ textarea {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     #main-1 .main-inner-wrap { padding: 95px 20px 35px; }
-    #main-1 .main-inner-wrap form { margin-top: 60px; }
+    #main-1 .main-inner-wrap form { margin-top: 30px; }
     #main-1 .form-group button { margin: 0; }
     #main-1 .form-group div:last-child { padding-left: 15px; }
 

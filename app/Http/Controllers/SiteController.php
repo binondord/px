@@ -99,6 +99,8 @@ class SiteController extends MainController
         $state = $this->request->get('state');
 
         $variables = [];
+        $version = $sharedData['version'];
+
         if($page == 'step' && !empty($state)) {
 
             $states = $this->states;
@@ -106,12 +108,24 @@ class SiteController extends MainController
 
             $state_name = $this->states[$state];
 
-        }elseif($page == 'step'){
+        }elseif($page == 'step' && $version != 5) {
             $state = 'CA';
             $state_name = 'California';
 
-            $version = $sharedData['version'];
-            return redirect('/v'.$version)->with('status', 'Please select state to proceed.');
+            $txt = $version == 5 ? 'Please enter zip to proceed.' : 'Please select state to proceed.';
+            return redirect('/v'.$version)->with('status', $txt);
+
+        }elseif($page == 'step' && $version == 5) {
+            $state = 'CA';
+            $state_name = 'California';
+
+            $txt = $version == 5 ? 'Please enter zip to proceed.' : 'Please select state to proceed.';
+
+            $location = $this->request->get('location');
+
+            $loc = \Sanitize::encodeLocation($location);
+
+            #dd($loc, $location);
         }
 
         $variables[] = 'state';
