@@ -9,7 +9,7 @@
 
         <div class="field">
             <label>Enter Your Email Below Now</label>
-            <input type="text" id="addemail" name="email" placeholder="Enter Email Address" onkeypress="addEmail(this)">
+            <input type="text" id="addemail" name="email1" placeholder="Enter Email Address" onkeypress="addEmail(this)">
         </div>
     </div>
 

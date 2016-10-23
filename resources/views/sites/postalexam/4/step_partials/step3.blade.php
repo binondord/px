@@ -6,7 +6,7 @@
         <div class="col-xs-12 col-md-push-1 col-md-10">
             <div class="form-group text-center">
                 <h2>Enter Your Email</h2>
-                <input name="email" type="text" onkeypress="addEmail(this)"/>
+                <input  id="addemail" name="email1" type="text" onkeypress="addEmail(this)"/>
             </div>
             <div class="form-group form-footer-group text-center">
                 <div class="button" id="step-3" onclick="nextStep(this)"><span class="btn-arrow">Continue</span></div>
