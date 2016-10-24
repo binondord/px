@@ -548,3 +548,6 @@ textarea {
     font-size: 14px;
     color:red;
 }
+.slick-slide:focus{
+    outline:none;
+}

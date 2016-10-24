@@ -422,3 +422,6 @@ h5 {
     font-weight: normal;
     text-align: right;
 }
+.slick-slide:focus{
+    outline:none;
+}
