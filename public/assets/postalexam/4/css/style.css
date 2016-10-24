@@ -222,6 +222,10 @@ textarea {
 	width: 100%;
 }
 
+.state-btn button:hover {
+    background-color: #c28c0b ;
+}
+
 .main-inner-wrap h1,
 .form-content-headeer h1 {
 	color: #fff;
