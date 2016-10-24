@@ -201,6 +201,10 @@ textarea {
     width: 100%;
 }
 
+#main-1 .form-group button:hover{
+    background-color: #c28513;
+}
+
 /*main 2*/
 .state-form-wrap { padding: 0 8px; }
 .state-btn {
