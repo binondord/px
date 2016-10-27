@@ -164,7 +164,11 @@
                     city : 'required',
                     state :'required',
                     country : 'required',
-                    zip : 'required',
+                    zip : {
+                        required : true,
+                        minlength: 3,
+                        maxlength: 5
+                    },
                     birthyear : 'required'
                 },
                 messages : {
