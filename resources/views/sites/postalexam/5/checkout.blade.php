@@ -3,7 +3,7 @@
 @section('styles')
     @parent
     <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,600' />
-    <link href="{{ asset($assetPath.$version.'/css/style.css', \Custom::secureUrl()) }}" rel="stylesheet" />
+    <link href="{{ asset($assetPath.'4/css/style.css', \Custom::secureUrl()) }}" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('/slick-1.6.0/slick/slick.css') }}">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('/slick-1.6.0/slick/slick-theme.css') }}">
     {{-- Html::style('/bower_components/bootstrap/dist/css/bootstrap.min.css')  --}}
@@ -186,6 +186,31 @@
     <script>
         $(document).ready(function(){
             $('.hint').popover({ trigger: "hover" });
+
+            $('form').validate({
+                rules : {
+                    nameOnCard: 'required',
+                    cardnumber : {
+                        required: true,
+                        minlength: 10,
+                        number: true
+                    },
+                    cvc : {
+                        required: true,
+                        minlength: 3,
+                        number: true
+                    },
+                    month : 'required',
+                    year :'required'
+                },
+                messages : {
+                    nameOnCard : 'Please enter the name that appears on the card.',
+                    cardnumber : 'Please enter a valid card number.',
+                    cvc : 'Please enter a valid CVC number.',
+                    month : 'Please select month.',
+                    year : 'Please select year.'
+                }
+            });
         });
     </script>
     <script src="{{ asset('/js/lib/raphael.js') }}"></script>

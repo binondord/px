@@ -3,8 +3,8 @@
 @section('styles')
     @parent
     <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,600' />
-    <link href="{{ asset($assetPath.$version.'/css/style.css', \Custom::secureUrl()) }}" rel="stylesheet" />
-    <link href="{{ asset($assetPath.$version.'/css/loclookups.css', \Custom::secureUrl()) }}" rel="stylesheet" />
+    <link href="{{ asset($assetPath.'4/css/style.css', \Custom::secureUrl()) }}" rel="stylesheet" />
+    <link href="{{ asset($assetPath.'5/css/loclookups.css', \Custom::secureUrl()) }}" rel="stylesheet" />
     {!! Html::style('/bower_components/bootstrap/dist/css/bootstrap.min.css')  !!}
 @endsection
 

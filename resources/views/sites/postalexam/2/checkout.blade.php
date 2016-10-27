@@ -186,6 +186,31 @@
     <script>
         $(document).ready(function(){
             $('.hint').popover({ trigger: "hover" });
+
+            $('form').validate({
+                rules : {
+                    nameOnCard: 'required',
+                    cardnumber : {
+                        required: true,
+                        minlength: 10,
+                        number: true
+                    },
+                    cvc : {
+                        required: true,
+                        minlength: 3,
+                        number: true
+                    },
+                    month : 'required',
+                    year :'required'
+                },
+                messages : {
+                    nameOnCard : 'Please enter the name that appears on the card.',
+                    cardnumber : 'Please enter a valid card number.',
+                    cvc : 'Please enter a valid CVC number.',
+                    month : 'Please select month.',
+                    year : 'Please select year.'
+                }
+            });
         });
     </script>
     <div id="alert"></div>

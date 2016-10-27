@@ -90,7 +90,7 @@
 @section('footer')
 
     <div id="alert"></div>
-    <script src="{{ asset($assetPath.'/4/js/step.js') }}"></script>
+    <script src="{{ asset($assetPath.'/5/js/step.js') }}"></script>
 
     {{-- Html::script('/bower_components/slick-carousel/slick/slick.js')  --}}
     {!! Html::script('/slick-1.6.0/slick/slick.js')  !!}
