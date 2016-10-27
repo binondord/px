@@ -42,20 +42,20 @@
             </div>
             <div class="col right">
                 <h4>Why Work for the USPS?</h4>
-                <p>From mail carriers to clerks to custodians, the U.S.</p>
+                <p>Receive full benefits, paid training and paid vacations.</p>
             </div>
         </section>
         <section class="row-3 clear">
             <h2>Eligibility Requirements of U.S. Postal Service Jobs</h2>
             <ul class="lists clear">
-                <li>Must be 18 years or older</li>
-                <li>Must be a U.S Citizen or have a Green Card.</li>
-                <li>Must pass USPS Exam 473</li>
-                <li>Must have basic competency in English.</li>
-                <li>No field work experienceis required!</li>
-                <li>No high school diploma or GED is required!</li>
-                <li>A qualification for employment is to be drug free</li>
-                <li>Military service is treated as prior employment.</li>
+                <li>Must be over the age of 18</li>
+                <li>Must pass the USPS Exam</li>
+                <li>Zero drug policy</li>
+                <li>No work experience is required.</li>
+                <li>Must be a U.S Citizen or have a green card</li>
+                <li>Must be competent in English</li>
+                <li>No GED or high school diploma is required</li>
+                <li>Military service serves as prior employment</li>
             </ul>
         </section>
     </main>

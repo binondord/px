@@ -1,7 +1,7 @@
 <fieldset class="step-1">
     <header>
-        <h3>Good News! The USPS is Hiring in your location. Continue to next step.</h3>
-        <p>A basic eligibility is expected from all applicants by the United States Postal Service. Please fill the required information truthfully:</p>
+        <h3>Good News! The USPS is Hiring in {{$state_name}}.</h3>
+        <p>A basic eligibility is expected of all applicants by the United States Postal Service. Please fill the required information below to see if you qualify.</p>
     </header>
     <div class="fields">
         <div class="field">

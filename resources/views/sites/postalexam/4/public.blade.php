@@ -55,16 +55,16 @@
                     <div class="bullet-left-info">
                         <h2 class="heading-title text-center">Eligibility Requirements of U.S. Service Jobs</h2>
                         <ul class="bullet-check-bg col-xs-12 col-md-6">
-                            <li>Must be 18 years or older</li>
-                            <li>Must pass USPS Exam 473</li>
-                            <li>No field work experience is required!</li>
-                            <li>A qualification for employment is to be drug free</li>
+                            <li>Must be over the age of 18</li>
+                            <li>Must pass the USPS Exam</li>
+                            <li>Zero drug policy</li>
+                            <li>No work experience is required.</li>
                         </ul>
                         <ul class="bullet-check-bg col-xs-12 col-md-6">
-                            <li>Must be a US Citizen or have a Green Card</li>
-                            <li>Must have basic competency in English</li>
-                            <li>Must have basic competency in English</li>
-                            <li>Military service is treated as prior employment.</li>
+                            <li>Must be a U.S Citizen or have a green card</li>
+                            <li>Must be competent in English</li>
+                            <li>No GED or high school diploma is required</li>
+                            <li>Military service serves as prior employment</li>
                         </ul>
                     </div>
                 </div>
