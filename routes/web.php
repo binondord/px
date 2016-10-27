@@ -48,6 +48,7 @@ Route::group(['prefix' => 'v3'], function () {
     Route::get('step', 'HomeController@v3step');
 });
 
+*/
 Route::group(['middleware' => 'auth'], function () {
     Route::resource('submissions', 'SubmissionsController');
     Route::resource('messages', 'MessagesController');
@@ -57,32 +58,32 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/users/changepasswd/{userid}','UsersController@showChangePasswd');
     Route::post('/users/changepasswd/{userid}','UsersController@saveChangePasswd');
-*/
+
     /*
      * Messages
      */
-/*
+
     Route::get('/api/all-messages','ApiController@getAllMessages');
     Route::get('/api/message/{message_id}','ApiController@getMessage');
-*/
+
     /*
      * Submissions
      */
-/*
+
     Route::get('/api/all-submissions','ApiController@getAllSubmissions');
     Route::get('/api/submission/{submission_id}','ApiController@getSubmission');
 
-    */
+
 
     /*
      * Users
      */
 
-    /*
+
     Route::get('/api/all-users','ApiController@getAllUsers');
     Route::get('/api/user/{user_id}','ApiController@getUser');
-    */
-/*});*/
+
+});
 
 
 Auth::routes();
