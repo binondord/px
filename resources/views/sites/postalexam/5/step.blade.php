@@ -3,7 +3,7 @@
 @section('styles')
     @parent
     <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,600' />
-    <link href="{{ asset($assetPath.$version.'/css/style.css', \Custom::secureUrl()) }}" rel="stylesheet" />
+    <link href="{{ asset($assetPath.'/4/css/style.css', \Custom::secureUrl()) }}" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('/slick-1.6.0/slick/slick.css') }}">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('/slick-1.6.0/slick/slick-theme.css') }}">
     {!! Html::style('/bower_components/bootstrap/dist/css/bootstrap.min.css')  !!}
@@ -90,7 +90,7 @@
 @section('footer')
 
     <div id="alert"></div>
-    <script src="{{ asset($assetPath.$version.'/js/step.js') }}"></script>
+    <script src="{{ asset($assetPath.'/4/js/step.js') }}"></script>
 
     {{-- Html::script('/bower_components/slick-carousel/slick/slick.js')  --}}
     {!! Html::script('/slick-1.6.0/slick/slick.js')  !!}
@@ -148,7 +148,12 @@
                     birthyear : 'required'
                 },
                 messages : {
-                    email : 'Please enter a valid email address'
+                    email : 'Please enter a valid email address.',
+                    firstname : 'Please enter your First Name.',
+                    lastname : 'Please enter your Last Name.',
+                    phone : 'Please enter a valid phone number.',
+                    city: 'Please enter your city.',
+                    zip: 'Please enter a valid zip code.'
                 }
             });
         });

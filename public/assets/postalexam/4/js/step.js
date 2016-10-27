@@ -12,36 +12,50 @@ function nextStep( event ) {
 
     var form = document.getElementById('form');
 
+    var num = Number(step[1]);
+    var slickTrack = $('.slick-track');
 
-    if( Number(step[1]) < 4 ) {
-
-        if(step[1] == 3) {
+    if( num < 4 ) {
+        if(num == 3) {
             var email = $('#addemail').val();
             $('#email').val(email);
-            if(email == '') {
 
-                $.growl.error({message: "Please enter your email address."});
-            }else {
+            var isValid = $('#addemail').valid();
+
+            if(isValid)
+            {
                 $('.regular').slick("slickNext");
+                $(window).scrollTop();
             }
         }else{
             $('.regular').slick("slickNext");
+            $(window).scrollTop();
         }
 
-        //$(".step-"+num).hide('slide',{direction:'right'},1000);
 
-        //form.children[(num*1)].style.display = 'block';
 
-        //$(".step-"+num +1).show('slide',{direction:'right'},1000);
-        /*
-        $( ".step-"+num +1).slideDown( "slow", function() {
-            // Animation complete.
-            console.log(' Animation complete.');
-        });*/
-        /*$( ".step-"+num ).slideUp( "slow", function() {
+        switch(num){
+            case 1:
+                slickTrack.css('height','690px');
+                break;
+            case 2:
+                slickTrack.css('height','806px');
+                break;
+            case 3:
+                var isFormValid = $('#form').valid();
+                if(!isFormValid){
+                    slickTrack.css('height','1025px');
+                }else {
+                    slickTrack.css('height', '800px');
+                }
+                break;
+            case 4:
+                break;
+        }
 
-        });
-        */
+        var top = ($(window).scrollTop() || $("body").scrollTop());
+        $("html, body").animate({ scrollTop: 0 }, top);
+
     } else {
 
         $(form).submit();

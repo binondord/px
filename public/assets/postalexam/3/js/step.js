@@ -19,10 +19,11 @@ function nextStep( event ) {
         if(step[1] == 3) {
             var email = $('#addemail').val();
             $('#email').val(email);
-            if(email == '') {
 
-                $.growl.error({message: "Please enter your email address."});
-            }else {
+            var isValid = $('#addemail').valid();
+
+            if(isValid)
+            {
                 $('.regular').slick("slickNext");
             }
         }else{

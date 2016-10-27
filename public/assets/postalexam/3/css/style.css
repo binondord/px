@@ -338,6 +338,10 @@ h5 {
     text-align: center;
     margin-bottom: 15px;
 }
+#step .row-1 form .step-3 .field label.error{
+    color:red;
+    font-weight: normal;
+}
 #step .row-1 form .step-3 .button {
     margin-top: 40px;
 }

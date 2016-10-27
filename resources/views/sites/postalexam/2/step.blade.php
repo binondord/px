@@ -57,16 +57,16 @@
         <section class="row-1 clear">
             <form action="/v{{$version}}/checkout" method="POST" id="form">
                 <section class="regular slider">
-                    <div>
+                    <div id="slider_1">
                         @include($layoutDir.'.'.$version.'.step_partials.step1')
                     </div>
-                    <div>
+                    <div id="slider_2">
                         @include($layoutDir.'.'.$version.'.step_partials.step2')
                     </div>
-                    <div>
+                    <div id="slider_3">
                         @include($layoutDir.'.'.$version.'.step_partials.step3')
                     </div>
-                    <div>
+                    <div id="slider_4">
                         @include($layoutDir.'.'.$version.'.step_partials.step4')
                     </div>
                 </section>
@@ -151,6 +151,10 @@
             $('form').validate({
                 rules : {
                     email : {
+                        email: true,
+                        required: true
+                    },
+                    email1 : {
                         email: true,
                         required: true
                     },
