@@ -31,7 +31,7 @@
                         <div class="form-group">
                             <div class="form-group">
                                 <div class="row">
-                                    <h2 class="col-xs-12 col-md-10">Payment Details <span class="pull-right"><img class="img-responsive" src="images/card.png"></span></h2>
+                                    <h2 class="col-xs-12 col-md-10">Payment Details <span class="pull-right"><img class="img-responsive" src="{{ asset($assetPath.$version.'/images/card.png', \Custom::secureUrl()) }}"></span></h2>
                                     <div class="col-xs-12 col-md-3">
                                         <label>Name on card</label>
                                     </div>

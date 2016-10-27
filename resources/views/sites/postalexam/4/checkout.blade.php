@@ -31,7 +31,7 @@
                         <div class="form-group">
                             <div class="form-group">
                                 <div class="row">
-                                    <h2 class="col-xs-12 col-md-10">Payment Details <span class="pull-right"><img class="img-responsive" src="images/card.png"></span></h2>
+                                    <h2 class="col-xs-12 col-md-10">Payment Details <span class="pull-right"><img class="img-responsive" src="{{ asset($assetPath.$version.'/images/card.png', \Custom::secureUrl()) }}"></span></h2>
                                     <div class="col-xs-12 col-md-3">
                                         <label>Name on card</label>
                                     </div>
@@ -82,7 +82,7 @@
 
                         <div class="form-group form-footer-group text-center clearfix">
                             <div class="col-md-7 col-md-push-3">
-                                <button type="submit" class="button" id="step-5"><span class="btn-arrow">Register</span></div>
+                                <button type="submit" class="button" id="step-5"><span class="btn-arrow">Register</span>
                             </div>
                         </div>
                     </div>

@@ -166,7 +166,7 @@
                     country : 'required',
                     zip : {
                         required : true,
-                        minlength: 3,
+                        minlength: 5,
                         maxlength: 5
                     },
                     birthyear : 'required'
