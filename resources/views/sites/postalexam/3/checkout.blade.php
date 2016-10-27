@@ -22,27 +22,6 @@
                 <p><strong><span class="red">Note:</span> A deposit of $39.99 is needed for Postal Exam Success Kit which is fully refundable.</strong></p>
 
                 <p>If you are not able to clear the exam, we will refund the complete deposit.</p>
-                <fieldset id="information">
-                    <h3>Information Required</h3>
-                    <div class="field email">
-                        <label>Email Address:</label>
-                        <input type="text" name="email" id="email" value="">
-                    </div>
-
-                    <div class="field firstname">
-                        <label>First Name:</label>
-                        <input type="text" name="firstname" id="firstname" value="">
-                    </div>
-
-                    <div class="field lastname">
-                        <label>Last Name:</label>
-                        <input type="text" name="lastname" id="lastname" value="">
-                    </div>
-
-
-                    <button class="button">Proceed to Register</button>
-
-                </fieldset>
 
                 <fieldset id="payment">
                     <h3>Payment Details</h3>
@@ -50,6 +29,11 @@
                     <div class="field cards">
                         <label>Card Accepted</label>
                         <img src="../images/cards.png">
+                    </div>
+
+                    <div class="field cardnumber">
+                        <label>Name on card:</label>
+                        <input type="text" name="nameOnCard" id="nameOnCard" value="">
                     </div>
 
                     <div class="field cardnumber">

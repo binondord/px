@@ -33,20 +33,21 @@
                                 <div class="row">
                                     <h2 class="col-xs-12 col-md-10">Payment Details <span class="pull-right"><img class="img-responsive" src="images/card.png"></span></h2>
                                     <div class="col-xs-12 col-md-3">
-                                        <label>Card Number</label>
+                                        <label>Name on card</label>
                                     </div>
                                     <div class="col-xs-12 col-md-7">
-                                        <input type="text"/>
+                                        <input type="text" name="nameOnCard"/>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="row">
                                     <div class="col-xs-12 col-md-3">
-                                        <label>Name on card</label>
+                                        <label>Card Number</label>
                                     </div>
                                     <div class="col-xs-12 col-md-7">
-                                        <input type="text" name="name_on_card"/>
+                                        <input name="cardnumber" type="text"/>
+
                                     </div>
                                 </div>
                             </div>

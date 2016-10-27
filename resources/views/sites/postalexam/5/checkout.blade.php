@@ -27,49 +27,27 @@
                 <div class="form-inner-wrap clearfix">
                     <div class="col-xs-12 col-md-push-1 col-md-10">
                         <p><strong>Note: A depost of $39.99 is needed for Postal Exam Kit which is fully refundable.</strong> If you are not able to clear the exam, we will refund the complete deposit.</p>
-                        <div class="form-group clearfix">
-                            <div class="form-group">
-                                <h2>Information Required</h2>
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-3">
-                                        <label>First Name</label>
-                                    </div>
-                                    <div class="col-xs-12 col-md-7">
-                                        <input type="text"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-3">
-                                        <label>Last Name</label>
-                                    </div>
-                                    <div class="col-xs-12 col-md-7">
-                                        <input type="text"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-3">
-                                        <label>Email Address</label>
-                                    </div>
-                                    <div class="col-xs-12 col-md-7">
-                                        <input type="text"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                         <div class="form-group">
                             <div class="form-group">
                                 <div class="row">
-                                    <h2 class="col-xs-12 col-md-10">Payment Details <span class="pull-right"><img class="img-responsive" src="{{ asset($assetPath.$version.'/images/card.png')}}"></span></h2>
+                                    <h2 class="col-xs-12 col-md-10">Payment Details <span class="pull-right"><img class="img-responsive" src="images/card.png"></span></h2>
+                                    <div class="col-xs-12 col-md-3">
+                                        <label>Name on card</label>
+                                    </div>
+                                    <div class="col-xs-12 col-md-7">
+                                        <input type="text" name="nameOnCard"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
                                     <div class="col-xs-12 col-md-3">
                                         <label>Card Number</label>
                                     </div>
                                     <div class="col-xs-12 col-md-7">
-                                        <input type="text"/>
+                                        <input name="cardnumber" type="text"/>
+
                                     </div>
                                 </div>
                             </div>
@@ -79,7 +57,7 @@
                                         <label>CVC</label>
                                     </div>
                                     <div class="col-xs-12 col-md-7">
-                                        <input type="text"/>
+                                        <input type="text" name="cvc"/>
                                     </div>
                                 </div>
                             </div>
