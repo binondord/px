@@ -82,65 +82,65 @@
 
                         <div class="form-group form-footer-group text-center clearfix">
                             <div class="col-md-7 col-md-push-3">
-                                <button type="submit" class="button" id="step-5"><span class="btn-arrow">Register</span></div>
+                                <button type="submit" class="button" id="step-5"><span class="btn-arrow">Register</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-    </div><!-- end of form-cotent-wrapper -->
+            </div><!-- end of form-cotent-wrapper -->
 
-    {{ csrf_field() }}
-    </form>
-    <div class="bullets-info-wrap clearfix">
-        <div class="col-xs-12 col-md-push-1 col-md-10">
-            <div class="row" id="bullets-row-1">
-                <div class="bullet-left-info col-xs-12 col-md-6">
-                    <h2 class="heading-title">Are you aware of</h2>
-                    <p>Entry level salary for Post Office jobs is $20 per hour. Unbelievable benefits are provided by USPS jobs which include:</p>
-                    <ul class="bullet-check-bg">
-                        <li>Full Centralized Benefits</li>
-                        <li>Training with Pay</li>
-                        <li>Vacations with Pay</li>
-                        <li>Experience is not mandatory</li>
-                    </ul>
-                </div>
-                <div class="bullet-right-info col-xs-12 col-md-6">
-                    <h2 class="heading-title">Types of Post Offered</h2>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <ul class="bullet-check-bg">
-                                <li>Mail Carrier</li>
-                                <li>Mail Processor</li>
-                                <li>Clerk Typist</li>
-                                <li>Garageman</li>
-                                <li>Corporate Positions</li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <ul class="bullet-check-bg">
-                                <li>Mail Handler</li>
-                                <li>Window Clerk</li>
-                                <li>Custodian</li>
-                                <li>Tractor Driver</li>
-                            </ul>
+            {{ csrf_field() }}
+        </form>
+        <div class="bullets-info-wrap clearfix">
+            <div class="col-xs-12 col-md-push-1 col-md-10">
+                <div class="row" id="bullets-row-1">
+                    <div class="bullet-left-info col-xs-12 col-md-6">
+                        <h2 class="heading-title">Are you aware of</h2>
+                        <p>Entry level salary for Post Office jobs is $20 per hour. Unbelievable benefits are provided by USPS jobs which include:</p>
+                        <ul class="bullet-check-bg">
+                            <li>Full Centralized Benefits</li>
+                            <li>Training with Pay</li>
+                            <li>Vacations with Pay</li>
+                            <li>Experience is not mandatory</li>
+                        </ul>
+                    </div>
+                    <div class="bullet-right-info col-xs-12 col-md-6">
+                        <h2 class="heading-title">Types of Post Offered</h2>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <ul class="bullet-check-bg">
+                                    <li>Mail Carrier</li>
+                                    <li>Mail Processor</li>
+                                    <li>Clerk Typist</li>
+                                    <li>Garageman</li>
+                                    <li>Corporate Positions</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <ul class="bullet-check-bg">
+                                    <li>Mail Handler</li>
+                                    <li>Window Clerk</li>
+                                    <li>Custodian</li>
+                                    <li>Tractor Driver</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row" id="bullets-row-2">
-                <div class="col-xs-12">
+                <div class="row" id="bullets-row-2">
+                    <div class="col-xs-12">
 
-                    <h2 class="heading-title">Minimum eligibility required are:</h2>
-                    <ul class="bullet-check-bg">
-                        <li>Should be minimum 18 years old.</li>
-                        <li>Only a U.S. citizen or a green card holder can apply.</li>
-                    </ul>
-                    <p>Do you meet the above two criteria? Wow! You may qualify for the positions with the United States Postal Service. To check complete eligibility, please follow the above steps.</p>
+                        <h2 class="heading-title">Minimum eligibility required are:</h2>
+                        <ul class="bullet-check-bg">
+                            <li>Should be minimum 18 years old.</li>
+                            <li>Only a U.S. citizen or a green card holder can apply.</li>
+                        </ul>
+                        <p>Do you meet the above two criteria? Wow! You may qualify for the positions with the United States Postal Service. To check complete eligibility, please follow the above steps.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div><!-- end of bullets-info-wrap -->
-    @include($layoutDir.'.'.$version.'.footer')
+        </div><!-- end of bullets-info-wrap -->
+        @include($layoutDir.'.'.$version.'.footer')
     </div><!-- end of container -->
 @endsection
 
