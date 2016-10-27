@@ -378,7 +378,9 @@ textarea {
     line-height: 42px;
     font-weight: bold;
 }
-
+.hint{
+    margin-left: 15px;
+}
 
 #step-5 .form-group.expiration-date #exp-date-1 { margin-bottom: 10px; }
 

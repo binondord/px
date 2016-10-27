@@ -26,6 +26,7 @@
     {{--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>--}}
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     {!! Html::script('/bower_components/jquery-ui/jquery-ui.min.js')  !!}
+    {!! Html::script('/bower_components/bootstrap/dist/js/bootstrap.min.js')  !!}
     {!! Html::script('/lib/jquery.mask.min.js')  !!}
 
 

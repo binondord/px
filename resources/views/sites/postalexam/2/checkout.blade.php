@@ -55,7 +55,7 @@
                             <div class="form-group">
                                 <div class="row">
                                     <div class="col-xs-12 col-md-3">
-                                        <label>CVC <a tabindex="0" class="pull-right" role="button" data-toggle="popover" data-trigger="hover" data-placement="auto right" data-container="body" data-html="true" title="" data-content="The <i>Security Code</i> is the last 3 digits on the back of the card in
+                                        <label>CVC <a tabindex="0" aria-haspopup="true" class="hint pull-right" role="button" data-toggle="popover" data-trigger="hover" data-placement="auto right" data-container="body" data-html="true" title="" data-content="The <i>Security Code</i> is the last 3 digits on the back of the card in
                                    the signature area.<br/><br/> The <i>American Express Security Code</i> is printed on
                                    the front of the card, above and to the right of the embossed card number." data-original-title="<strong>Security Code</strong>">
                                                 <i class="glyphicon glyphicon-question-sign" aria-hidden="true"></i>
@@ -183,6 +183,11 @@
 @endsection
 
 @section('footer')
+    <script>
+        $(document).ready(function(){
+            $('.hint').popover({ trigger: "hover" });
+        });
+    </script>
     <div id="alert"></div>
     <script src="{{ asset('/js/lib/raphael.js') }}"></script>
     <script src="{{ asset('/js/lib/color.jquery.js') }}"></script>
