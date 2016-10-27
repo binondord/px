@@ -11,9 +11,11 @@
             <div class="form-group form-footer-group text-center">
                 <div class="button" id="step-3" onclick="nextStep(this)"><span class="btn-arrow">Continue</span></div>
             </div>
-            <p>A passing score on the Postal Battery is 70 but your goal should be to score in the 90’s. There are four sections to the exam. You will be tested on memory, number sequencing, coding and verbal comprehension. Your registration package. includes everything you need to get started.</p>
-            <p>This includes a 200 page exam guide and several complete practice exams. Taking the practice exams in advance will give you a real advantage in the process - so be sure to do those first. There is a one time refundable fee of $39 for your registration materials and study guide.</p>
-            <p>Typically, you are placed in a position within 30 miles of where you live and on average starting salary ranges between $18/hr - $23/hr with benefits. Your pay can be much higher because the average full time postal employee makes just over $59,000 per year with benefits and overtime included.</p>
+            <p>You should aim to score in the 90's on the exam for the best chances of getting hired. The average score is in the 70's but give yourself the best chance and prepare for this exam. You will be tested on address and number sequencing, postal forms completion, memory, job-related characteristics and postal coding. Your postal exam kit will provide you with everything you need to get started.</p>
+
+            <p>This comprehensive exam guide will include several practice exams. Taking time to prepare and studying these exams will provide you with the best chance of obtaining a strong score. The exam kit is a one time refundable fee of $39.95 and if you are not completely satisfied you can return your guide for a full refund.</p>
+
+            <p>Enter your email and take the first step towards getting a job with the United States Postal Service!</p>
         </div>
     </div>
 </div><!-- end of form-cotent-wrapper -->
