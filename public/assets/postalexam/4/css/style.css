@@ -362,17 +362,23 @@ textarea {
 	line-height: 45px;
 }
 #step-5 .form-group input[type="text"],
-#step-5 .form-group input[type="number"] {
-	border:0;
-	width: 100%;
-	padding: 0 15px;
-	display: inline-block;
-	height: 45px;
-	border-radius: 4px;
-	-webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.30);
-	-moz-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.30);
-	box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.30);
+#step-5 .form-group input[type="number"], select {
+    border:0;
+    width: 100%;
+    padding: 0 15px;
+    display: inline-block;
+    height: 45px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.30);
+    box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.30);
 }
+
+#step-5 .form-group .separator{
+    line-height: 42px;
+    font-weight: bold;
+}
+
 
 #step-5 .form-group.expiration-date #exp-date-1 { margin-bottom: 10px; }
 
