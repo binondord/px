@@ -42,7 +42,7 @@
                     <div class="row">
                         <div class="faq-item col-xs-12 col-sm-6" id="faq-item-1">
                             <h3>Take the Postal Exam</h3>
-                            <p>The Postal Exam is the most <br class="visible-md visible-lg" />commonly used for USPS careers.</p>
+                            <p>The Postal Exam is the most <br class="visible-md visible-lg" />common exam to get a job at the USPS.</p>
                         </div>
                         <div class="faq-item col-xs-12 col-sm-6" id="faq-item-2">
                             <h3>Why Work for the USPS?</h3>

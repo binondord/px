@@ -38,12 +38,12 @@
                 <div class="col-xs-12 col-md-push-1 col-md-10">
                     <div class="row">
                         <div class="faq-item col-xs-12 col-sm-6" id="faq-item-1">
-                            <h3>Take the Postal Exam 473</h3>
-                            <p>The Postal Exam 473 ia the most <br class="visible-md visible-lg" />commonly used for USPS careers.</p>
+                            <h3>Take the Postal Exam</h3>
+                            <p>The Postal Exam is the most <br class="visible-md visible-lg" />common exam to get a job at the USPS.</p>
                         </div>
                         <div class="faq-item col-xs-12 col-sm-6" id="faq-item-2">
                             <h3>Why Work for the USPS?</h3>
-                            <p>From mail carriers to clerks to <br class="visible-md visible-lg"/>custodians, the U.S.</p>
+                            <p>Receive full benefits, paid training <br class="visible-md visible-lg"/>and paid vacations.</p>
                         </div>
                     </div>
                 </div>
