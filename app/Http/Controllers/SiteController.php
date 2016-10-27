@@ -130,10 +130,10 @@ class SiteController extends MainController
             #dd($loc, $location);
         }
 
-        $isStepDone = session('isStepDone',false);
+        $isStepDone = $this->request->session()->pull('isStepDone',false);
         if($page == 'checkout' && !$isStepDone)
         {
-            $txt = 'You cannot go directly to checkout page.';
+            $txt = 'Please select state to proceed.';
             return redirect('/v'.$version)->with('status', $txt);
         }
 
