@@ -7,7 +7,7 @@
             <div class="form-group">
                 <div class="row">
                     <div class="col-md-3">
-                        <label>Email Address</label>
+                        <label>Email</label>
                     </div>
                     <div class="col-md-7">
                         <input id="email" name="email" type="text"/>

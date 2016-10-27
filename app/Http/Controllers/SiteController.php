@@ -108,6 +108,8 @@ class SiteController extends MainController
 
             $state_name = $this->states[$state];
 
+            session(['isStepDone' => true]);
+
         }elseif($page == 'step' && $version != 5) {
             $state = 'CA';
             $state_name = 'California';
@@ -126,6 +128,13 @@ class SiteController extends MainController
             $loc = \Sanitize::encodeLocation($location);
 
             #dd($loc, $location);
+        }
+
+        $isStepDone = session('isStepDone',false);
+        if($page == 'checkout' && !$isStepDone)
+        {
+            $txt = 'You cannot go directly to checkout page.';
+            return redirect('/v'.$version)->with('status', $txt);
         }
 
         $variables[] = 'state';
