@@ -260,6 +260,19 @@ textarea {
 	display: block;
 }
 
+.form-inner-wrap .form-group label.error{
+    color:red;
+    font-weight: normal;
+}
+.form-inner-wrap .form-group label#addemail-error{
+    color: red;
+    font-weight: normal;
+    float: none;
+    position: absolute;
+    left: 25em;
+    top: 4.3em;
+}
+
 
 .form-inner-wrap .form-group input[type="radio"] {
     display:none;
