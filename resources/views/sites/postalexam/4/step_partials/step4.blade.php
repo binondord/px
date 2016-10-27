@@ -40,7 +40,7 @@
                         <label>Phone Number</label>
                     </div>
                     <div class="col-md-7">
-                        <input name="phone" type="text"/>
+                        <input type="text" name="phone" id="phone" placeholder="(555)555-5555">
                     </div>
                 </div>
             </div>

@@ -19,7 +19,7 @@
 
         <div class="field phone">
             <label>Phone Number:</label>
-            <input type="text" name="phone" id="phone">
+            <input type="text" name="phone" id="phone" placeholder="(555)555-5555">
         </div>
 
         <div class="field city">

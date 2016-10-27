@@ -37,8 +37,8 @@
         <section class="row-2 clear">
             <h2>Prepare Yourself for a Career with the U.S. Postal Service</h2>
             <div class="col left">
-                <h4>Take the Postal Exam 473</h4>
-                <p>The Postal Exam 473 is the most commonly used exam for USPS careers.</p>
+                <h4>Take the Postal Exam</h4>
+                <p>The Postal Exam is the most commonly used exam for USPS careers.</p>
             </div>
             <div class="col right">
                 <h4>Why Work for the USPS?</h4>

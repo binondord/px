@@ -127,6 +127,27 @@
                 rtl : false
             });
 
+            $('#phone').mask('(999)999-9999');
+
+            $.validator.addMethod(
+                "US_Phone",
+                function(value, element){
+                    value = value.replace(/_/g,"");
+                    if(value.length >= 10)
+                    {
+                        var val = value.substring(1,2);
+                        if(val != 1 && val != "_" && val > 1){
+                            return true;
+                        }else{
+                            return false;
+                        }
+                    }else{
+                        return false;
+                    }
+                },
+                'Invalid US Phone'
+            );
+
             $('form').validate({
                 rules : {
                     email : {
@@ -135,7 +156,11 @@
                     },
                     firstname: 'required',
                     lastname : 'required',
-                    phone : 'required',
+                    phone : {
+                        required: true,
+                        minlength: 10,
+                        US_Phone: true
+                    },
                     city : 'required',
                     state :'required',
                     country : 'required',
