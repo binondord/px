@@ -134,7 +134,7 @@ class SiteController extends MainController
         if($page == 'checkout' && !$isStepDone)
         {
             $txt = 'Please select state to proceed.';
-            return redirect('/v'.$version)->with('status', $txt);
+            #return redirect('/v'.$version)->with('status', $txt);
         }
 
         $variables[] = 'state';
