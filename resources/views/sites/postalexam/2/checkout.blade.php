@@ -1,4 +1,4 @@
-@extends($layoutDir.'.default')
+@extends($layoutDir.'.4.'')
 
 @section('styles')
     @parent
