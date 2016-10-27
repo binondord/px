@@ -75,17 +75,17 @@
         </section>
         <section class="row-2 clear">
             <div class="col left">
-                <h2>Are you aware of</h2>
-                <p>Entry level salary for Post office jobs is $20 per hour. Unbelievable benefits are provided by USPS jobs which include.</p>
+                <h2>Did you know?</h2>
+                <p>The average entry level salary for a post office job is $20 per hour. They provide great benefits that include:</p>
                 <ul class="lists clear">
-                    <li>Full Centralized Benefits</li>
-                    <li>Training With Pay</li>
-                    <li>Vacations With Pay</li>
-                    <li>Experience is not mandatory!</li>
+                    <li>Full Benefits</li>
+                    <li>Paid Training</li>
+                    <li>Paid Vacations</li>
+                    <li>No experience is required!</li>
                 </ul>
             </div>
             <div class="col right">
-                <h2>Type of Post Offered</h2>
+                <h2>Type of Jobs Available</h2>
                 <ul class="lists clear">
                     <li>Mail Carrier</ll>
                     <li>Mail Handler</ll>
@@ -100,12 +100,12 @@
             </div>
         </section>
         <section class="row-3">
-            <h2>Minimum eligibility required to meet the criteria for post office career</h2>
+            <h2>Minimum eligibility required to meet the criteria for a career with the USPS</h2>
             <ul class="lists clear">
-                <li>- Should be minimum 18 years old</li>
-                <li>- Only a U.S. citizen or a green card holder can apply.</li>
+                <li>- Must be a minimun of 18 years old</li>
+                <li>- Must be a U.S Citizen or have a green card</li>
             </ul>
-            <p>Do you meet the above two criteria? Wow!! You may qualify for the positions with the United States Postal Service. To check complete eligibility, please follow the above steps.</p>
+            <p>Do you meet the above criteria? If so, you may qualify for a position with the United States Postal Service! To check eligibility please follow the steps above.</p>
         </section>
     </main>
 @endsection
