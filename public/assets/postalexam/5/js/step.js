@@ -48,12 +48,13 @@ function nextStep( event ) {
 
                 if(isValid) {
 
+                    /*
                     var isFormValid = $('#form').valid();
                     if (!isFormValid) {
                         slickTrack.css('height', '1025px');
                     } else {
                         slickTrack.css('height', '800px');
-                    }
+                    }*/
                 }
                 break;
             case 4:

@@ -47,12 +47,13 @@ function nextStep( event ) {
                     slickTrack.css('height','700px');
                 }*/
                 if(isValid) {
+                    /*
                     var isFormValid = $('#form').valid();
                     if (!isFormValid) {
                         slickTrack.css('height', '785px');
                     } else {
                         slickTrack.css('height', '785px');
-                    }
+                    }*/
                 }
                 break;
         }
