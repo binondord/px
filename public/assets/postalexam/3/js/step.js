@@ -38,23 +38,26 @@ function nextStep( event ) {
 
         switch(num){
             case 1:
-                slickTrack.css('height','690px');
+                //slickTrack.css('height','690px');
                 break;
             case 2:
-                slickTrack.css('height','806px');
+                slickTrack.css('height','683px');
                 break;
             case 3:
-                /*
-                var isFormValid = $('#form').valid();
-                if(!isFormValid){
-                    slickTrack.css('height','1025px');
-                }else {
-                    slickTrack.css('height', '800px');
+                var isValid = $('#addemail').valid();
+                if(!isValid){
+                 slickTrack.css('height','700px');
+                 }
+                if(isValid) {
+                    /*
+                     var isFormValid = $('#form').valid();
+                     if (!isFormValid) {
+                     slickTrack.css('height', '785px');
+                     } else {
+                     slickTrack.css('height', '785px');
+                     }*/
+                    slickTrack.css('height', '785px');
                 }
-                */
-                slickTrack.css('height', '785px');
-                break;
-            case 4:
                 break;
         }
 
