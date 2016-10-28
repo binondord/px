@@ -51,10 +51,11 @@ function nextStep( event ) {
                     /*
                     var isFormValid = $('#form').valid();
                     if (!isFormValid) {
-                        slickTrack.css('height', '1025px');
+                     slickTrack.css('height','1025px');
                     } else {
                         slickTrack.css('height', '800px');
                     }*/
+                    slickTrack.css('height','1025px');
                 }
                 break;
             case 4:

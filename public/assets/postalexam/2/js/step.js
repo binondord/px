@@ -54,6 +54,7 @@ function nextStep( event ) {
                     } else {
                         slickTrack.css('height', '785px');
                     }*/
+                    slickTrack.css('height', '785px');
                 }
                 break;
         }

@@ -52,6 +52,7 @@ function nextStep( event ) {
                     slickTrack.css('height', '800px');
                 }
                 */
+                slickTrack.css('height','1025px');
                 break;
             case 4:
                 break;
