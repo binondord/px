@@ -101,7 +101,7 @@
                     <div class="col-md-7">
                         <select name="birthyear" id="birthyear">
                             <option value="">- Select -</option>
-                            @for($i=1911; $i<= date('Y')-18; $i++)
+                            @for($i=date('Y')-18; $i>= 1911  ; $i--)
                                 <option>{{ $i }}</option>
                             @endfor
                         </select>

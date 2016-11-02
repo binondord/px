@@ -1,0 +1,376 @@
+@import url('global.css');
+
+.inner {
+    width: 850px;
+    margin: 0 auto;
+}
+
+.button {
+    border: 0;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 25px 50px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+/* Header */
+#header .logo {
+    margin-top: 10px;
+    padding: 30px 210px;
+    display: inline-block;
+    background: url(../images/logo.png) center center no-repeat;
+}
+#header .line {
+    padding: 22px 0;
+    background: #13206b;
+    background: -moz-linear-gradient(top, #13206b 0%, #323794 100%);
+    background: linear-gradient(to bottom, #13206b 0%,#323794 100%);
+    background: -webkit-linear-gradient(top, #13206b 0%,#323794 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13206b', endColorstr='#323794',GradientType=0 );
+}
+#header .social {
+    clear: both;
+    margin: 20px 0;
+}
+#header .social .tweet {
+    float: right;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 850px;
+}
+#container h4 {
+    font-weight: bold;
+}
+#container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+#container section p {
+    font-size: 16px;
+}
+#container section h3 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#container section .content {
+    text-align: center;
+}
+#container section .content .benefits li {
+    color: #001e7f;
+    font-weight: bold;
+    line-height: 20px;
+}
+#container section .content .includes p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#container section .content .get-started {
+    color: #710;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 0 18px 0;
+}
+#container section .content .positions {
+    padding: 20px 0;
+    margin: 0 0 40px;
+    background: url(../images/divider.png) top center no-repeat;
+}
+#container section .content .positions li {
+    float: left;
+    width: 150px;
+    font-size: 14px;
+    padding: 0 65px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+#container section .requirements {
+    margin-bottom: 30px;
+}
+#container section .requirements li {
+    font-size: 14px;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    background: url(../images/check.png) center left no-repeat;
+}
+
+
+
+/* Row 1 */
+#container .row-3 h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#container .row-3 ul.lists li {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+/* Home Row 1 */
+#home .row-1 {
+    padding: 0 0 40px;
+    text-align: center;
+}
+
+
+
+/* Step Row 1 */
+#step .row-1 form {
+    padding: 10px 50px;
+}
+#step .row-1 form h3 {
+    text-align: center;
+}
+#step .row-1 form h5 {
+    margin: 0;
+    font-weight: bold;
+    display: inline-block;
+}
+#step .row-1 form fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+#step .row-1 form fieldset h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#step .row-1 form fieldset h4 span {
+    background: yellow;
+}
+#step .row-1 form label.right {
+    float: right;
+    display: inline-block;
+}
+#step .row-1 form fieldset .fields {
+    font-weight: bold;
+    background: #efedf0;
+    padding: 20px 30px 50px;
+    box-shadow: inset 0 0 10px -2px #333;
+}
+#step .row-1 form fieldset .fields p {
+    margin-bottom: 30px;
+}
+#step .row-1 form fieldset .fields .field {
+    padding: 0 40px;
+    margin-bottom: 30px;
+}
+#step .row-1 form fieldset:first-child {
+    display: block;
+}
+#step .row-1 form .action {
+    margin-top: 50px;
+    text-align: center;
+}
+#step .row-1 form .action .button {
+    font-size: 35px;
+    text-shadow: none;
+    padding: 25px 80px;
+    background: #d9828c;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    display: inline-block;
+    border: 4px solid #fff;
+    text-shadow: 2px 2px 2px #311d1d;
+    box-shadow: 0 0 20px -4px #444;
+    background: -moz-linear-gradient(top, #d9828c 0%, #b10d11 100%);
+    background: linear-gradient(to bottom, #d9828c 0%,#b10d11 100%);
+    background: -webkit-linear-gradient(top, #d9828c 0%,#b10d11 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9828c', endColorstr='#b10d11',GradientType=0 );
+}
+
+
+
+/* Step Step 3 */
+#step .row-1 form .step-3 p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    margin-bottom: 15px !important;
+}
+
+#step .row-1 form .step-3 .field {
+    width: 400px;
+    margin: 20px auto 15px !important;
+}
+#step .row-1 form .step-3 .field input {
+    width: 89%;
+    padding: 20px;
+    font-size: 20px;
+    font-style: italic;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+}
+#step .row-1 form .step-3 .field label {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#step .row-1 form .step-3 .action {
+    margin: 0;
+}
+
+
+/* Step Step 4 */
+#step .row-1 form .step-4 .field {
+    width: 370px;
+    padding: 0 !important;
+    margin: 0 auto 5px !important;
+}
+#step .row-1 form .step-4 .field label {
+    width: 130px;
+    font-size: 14px;
+    font-weight: normal;
+    display: inline-block;
+}
+#step .row-1 form .step-4 .field input {
+    width: 210px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+}
+#step .row-1 form .step-4 .field select {
+    width: 230px;
+    height: 30px;
+    font-size: 12px;
+    background: #fff;
+    border: 1px solid #c3c3c3;
+}
+
+#step .row-1 form .step-4 .field.zip input {
+    width: 100px;
+}
+#step .row-1 form .step-4 .field.birhtyear select {
+    width: 123px;
+}
+
+
+
+/* Step Row 2 */
+#step .row-2 {
+    padding: 40px 0;
+}
+#step .row-2 h3 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#step .row-2 .left {
+    width: 400px;
+}
+#step .row-2 .left .lists li {
+    padding-left: 30px;
+    margin-bottom: 30px;
+    background: url(../images/check.png) left center no-repeat;
+}
+
+
+
+/* Checkout Row 1 */
+#checkout .row-1 {
+    padding: 10px 0;
+}
+#checkout .row-1 p {
+    font-size: 14px;
+    font-weight: normal;
+}
+#checkout .row-1 form {
+    width: 700px;
+    margin: 0 auto;
+    font-weight: bold;
+    background: #efedf0;
+    padding: 20px 30px 50px;
+    box-shadow: inset 0 0 10px -2px #333;
+}
+#checkout .row-1 form label {
+    width: 180px;
+    font-size: 14px;
+    display: inline-block;
+}
+#checkout .row-1 form input {
+    width: 180px;
+    padding: 5px 10px;
+}
+#checkout .row-1 form button {
+    font-size: 14px;
+    padding: 10px 28px;
+    margin: 20px 0 20px 185px;
+}
+#checkout .row-1 form .fields {
+    float: left;
+    width: 400px;
+}
+#checkout .row-1 form .fields h3 {
+    margin-top: 50px;
+}
+#checkout .row-1 form .fields .field {
+    margin-bottom: 20px;
+}
+#checkout .row-1 form .fields .field .date {
+    width: 205px;
+    display: inline-block;
+}
+#checkout .row-1 form .fields .field .date select {
+    width: 100px;
+    height: 25px;
+    font-size: 14px;
+    background: #fff;
+    display: inline-block;
+    border: 1px solid #cecece;
+}
+
+
+#checkout .row-1 form .product {
+    float: right;
+    width: 300px;
+    margin-top: 150px;
+    text-align: center;
+}
+#checkout .row-1 form .product h5 {
+    font-weight: bold;
+}
+
+#checkout .row-1 form .footnote {
+    display: inline-block;
+}
+#checkout .row-1 form .footnote p {
+    margin-bottom: 0;
+}
+
+
+/* Footer */
+#footer {
+    font-size: 12px;
+    padding-top: 50px;
+    text-align: center;
+}
+#footer span {
+    display: block;
+}
+.error{
+    color:red;
+    font-weight: normal;
+}
+.slick-slide:focus{
+    outline:none;
+}
+#step .row-1 form .step-3 .field input#addemail{
+    width: 100%;
+}

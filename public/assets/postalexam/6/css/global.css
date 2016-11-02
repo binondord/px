@@ -1,0 +1,62 @@
+
+body {
+    margin: 0;
+    color: #1d252b;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 50px;
+    text-shadow: 1px 1px 1px #fff;
+    font-family: Helvetica,Arial,sans-serif;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #d3d1d7 100%);
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#d3d1d7 100%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#d3d1d7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d3d1d7',GradientType=0 );
+}
+body a {
+    color: #1b4865;
+    text-decoration: none;
+}
+body p {
+    margin: 0 0 15px;
+    line-height: 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1d252b;
+    margin: 0 0 20px;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 35px;
+}
+h2 {
+    font-size: 28px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 16px;
+}
+.red {
+    color: red;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+.clear::after {
+    height: 0;
+    content: '.';
+    clear: both;
+    display: block;
+    visibility: hidden;
+}

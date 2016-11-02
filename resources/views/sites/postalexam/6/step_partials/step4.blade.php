@@ -1,30 +1,30 @@
 <fieldset class="step-4">
-    <h2>Please fill out your information to complete your entrance.</h2>
+    <h3>Please fill out your information to complete your entrance.</h3>
     <div class="fields">
 
         <div class="field email">
             <label>Email Address:</label>
-            <input type="text" name="email" id="email">
+            <input type="text" name="email" id="email" value="">
         </div>
 
         <div class="field firstname">
             <label>First Name:</label>
-            <input type="text" name="firstname" id="firstname">
+            <input type="text" name="firstname" id="firstname" value="">
         </div>
 
         <div class="field lastname">
             <label>Last Name:</label>
-            <input type="text" name="lastname" id="lastname">
+            <input type="text" name="lastname" id="lastname" value="">
         </div>
 
         <div class="field phone">
             <label>Phone Number:</label>
-            <input type="text" name="phone" id="phone" placeholder="(555)555-5555">
+            <input type="text" name="phone" id="phone" value="">
         </div>
 
         <div class="field city">
             <label>City:</label>
-            <input type="text" name="city" id="city">
+            <input type="text" name="city" id="city" value="">
         </div>
 
         <div class="field state">
@@ -62,8 +62,11 @@
                 @endfor
             </select>
         </div>
-    </div>
 
-    <div class="button" id="step-4" onclick="nextStep(this)"><span class="span">Send My Exam Kit</span></div>
+        <div class="action">
+            <span class="button" id="step-4" onclick="nextStep(this)">Send My Exam Kit</span>
+        </div>
+
+    </div>
 
 </fieldset>
