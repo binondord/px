@@ -18,6 +18,8 @@ class MainController extends Controller
         $this->site_config = config('config');
 
         $route = $request->route();
+
+        #dd($request);
         $segments = $request->segments();
         $routeParameters = !is_null($route) ? $route->parameters() : [];
         $site = config('site');

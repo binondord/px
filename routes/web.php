@@ -97,6 +97,65 @@ $routes = [
     'step',
     'checkout'
 ];
+
+$states = [
+    'HI'=>'hawaii',
+    'AK'=>'alaska',
+    'FL'=>'florida',
+    'SC'=>'south-carolina',
+    'GA'=>'georgia',
+    'AL'=>'alabama',
+    'NC'=>'north-carolina',
+    'TN'=>'tennessee',
+    'RI'=>'rhode-island',
+    'CT'=>'connecticut',
+    'MA'=>'massachusetts',
+    'ME'=>'maine',
+    'NH'=>'new-hampshire',
+    'VT'=>'vermont',
+    'NY'=>'new-york',
+    'NJ'=>'new-jersey',
+    'PA'=>'pennsylvania',
+    'DE'=>'delaware',
+    'MD'=>'maryland',
+    'WV'=>'west-virginia',
+    'KY'=>'kentucky',
+    'OH'=>'ohio',
+    'MI'=>'michigan',
+    'WY'=>'wyoming',
+    'MT'=>'montana',
+    'ID'=>'Idaho',
+    'WA'=>'washington',
+    'TX'=>'texas',
+    'CA'=>'california',
+    'AZ'=>'arizona',
+    'NV'=>'nevada',
+    'UT'=>'utah',
+    'CO'=>'colorado',
+    'NM'=>'new-mexico',
+    'OR'=>'oregon',
+    'ND'=>'north-dakota',
+    'SD'=>'south-dakota',
+    'NE'=>'nebraska',
+    'IA'=>'iowa',
+    'MS'=>'mississippi',
+    'IN'=>'indiana',
+    'IL'=>'illinois',
+    'MN'=>'minnesota',
+    'WI'=>'wisconsin',
+    'MO'=>'missouri',
+    'AR'=>'arkansas',
+    'OK'=>'oklahoma',
+    'KS'=>'kansas',
+    'LA'=>'louisiana',
+    'VA'=>'virginia'
+];
+
+foreach($states as $state)
+{
+    array_push($routes, $state.'-post-office-jobs');
+}
+
 if(!function_exists('setRoute')) {
     function setRoute($data)
     {

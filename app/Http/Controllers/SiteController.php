@@ -63,6 +63,59 @@ class SiteController extends MainController
         'DC'=>'District of Columbia'
     ];
 
+    private $urlStates = [
+        'HI'=>'hawaii',
+        'AK'=>'alaska',
+        'FL'=>'florida',
+        'SC'=>'south-carolina',
+        'GA'=>'georgia',
+        'AL'=>'alabama',
+        'NC'=>'north-carolina',
+        'TN'=>'tennessee',
+        'RI'=>'rhode-island',
+        'CT'=>'connecticut',
+        'MA'=>'massachusetts',
+        'ME'=>'maine',
+        'NH'=>'new-hampshire',
+        'VT'=>'vermont',
+        'NY'=>'new-york',
+        'NJ'=>'new-jersey',
+        'PA'=>'pennsylvania',
+        'DE'=>'delaware',
+        'MD'=>'maryland',
+        'WV'=>'west-virginia',
+        'KY'=>'kentucky',
+        'OH'=>'ohio',
+        'MI'=>'michigan',
+        'WY'=>'wyoming',
+        'MT'=>'montana',
+        'ID'=>'Idaho',
+        'WA'=>'washington',
+        'TX'=>'texas',
+        'CA'=>'california',
+        'AZ'=>'arizona',
+        'NV'=>'nevada',
+        'UT'=>'utah',
+        'CO'=>'colorado',
+        'NM'=>'new-mexico',
+        'OR'=>'oregon',
+        'ND'=>'north-dakota',
+        'SD'=>'south-dakota',
+        'NE'=>'nebraska',
+        'IA'=>'iowa',
+        'MS'=>'mississippi',
+        'IN'=>'indiana',
+        'IL'=>'illinois',
+        'MN'=>'minnesota',
+        'WI'=>'wisconsin',
+        'MO'=>'missouri',
+        'AR'=>'arkansas',
+        'OK'=>'oklahoma',
+        'KS'=>'kansas',
+        'LA'=>'louisiana',
+        'VA'=>'virginia'
+    ];
+
     public function serve()
     {
         $allowed_pages = [
@@ -77,8 +130,18 @@ class SiteController extends MainController
             'checkout'
         ];
 
+        foreach($this->urlStates as $state)
+        {
+            array_push($allowed_pages, $state.'-post-office-jobs');
+        }
+
         $sharedData = $this->sharedData;
         $segments = $sharedData['segments'];
+
+        $request = $this->request;
+
+
+        //dd($request);
 
         @reset($segments);
         foreach($segments as $segment)
@@ -139,6 +202,7 @@ class SiteController extends MainController
 
         $variables[] = 'state';
         $variables[] = 'state_name';
+
 
         $v = $this->view($blade, compact($variables));
 
